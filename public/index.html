@@ -4,31 +4,384 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <title>Идеальный магазин будущего — review prototype</title>
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#2f58bd">
+  <title>Идеальный магазин будущего — ECR · external review</title>
+  <meta name="description" content="Обезличенный редакционный обзор встречи ECR 19 августа 2026 года: магазин будущего как адаптивная система решений.">
   <style>
-    :root{color-scheme:light;--ink:#123c38;--muted:#6b817c;--line:#d7e8e3;--accent:#0e8c7b;--wash:#edf8f4}
-    *{box-sizing:border-box}body{margin:0;background:#f7fbfa;color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    main{max-width:980px;margin:0 auto;padding:48px 24px 72px}.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700;color:var(--accent)}
-    h1{font-size:clamp(2.4rem,6vw,5.4rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 22px;max-width:820px}h2{font-size:1.55rem;margin:0 0 12px}p{max-width:720px;color:var(--muted)}
-    .notice{display:inline-flex;gap:8px;align-items:center;border:1px solid #f1d59b;background:#fff8e8;color:#7a5a15;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:650}
-    .hero{padding:28px 0 52px;border-bottom:1px solid var(--line)}.meta{margin-top:18px;font-weight:600;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 30px #0b665b0d}.num{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase}.card h3{font-size:1.25rem;line-height:1.15;margin:12px 0 8px}.card p{font-size:15px;margin:0}
-    .footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
-    @media(max-width:720px){main{padding:28px 18px 56px}.grid{grid-template-columns:1fr}.hero{padding-bottom:34px}}
+    :root{
+      color-scheme:light;
+      --navy:#102e43;
+      --navy-2:#173e5b;
+      --blue:#2f58bd;
+      --blue-dark:#1d459f;
+      --cyan:#24a9d8;
+      --green:#00a980;
+      --green-bright:#00c493;
+      --sky:#eaf3fd;
+      --mint:#e7f8f3;
+      --paper:#f6f9fc;
+      --white:#fff;
+      --muted:#60727c;
+      --line:#dce6ea;
+      --amber:#b87511;
+      --shadow:0 24px 70px rgba(22,58,96,.13);
+      --shadow-sm:0 12px 32px rgba(22,58,96,.09);
+      --r-xl:28px;
+      --r-md:20px;
+      --r-sm:14px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--navy);font:16px/1.55 "Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    img{display:block;max-width:100%}
+    button,a{font:inherit}
+    button{color:inherit}
+    a{color:inherit}
+    .wrap{width:min(1232px,calc(100% - 48px));margin:auto}
+    .topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .brand-mark{width:42px;height:42px;border:2px solid var(--blue);border-radius:50%;display:grid;place-items:center;color:var(--blue);font-size:12px;letter-spacing:-.03em}
+    .status{display:inline-flex;align-items:center;gap:8px;min-height:34px;padding:7px 12px;border:1px solid #e6c98f;border-radius:999px;background:#fff8e8;color:#7b520f;font-size:12px;font-weight:800}
+    .status::before{content:"";width:8px;height:8px;border-radius:50%;background:#df910d}
+    main{padding-bottom:64px}
+    section{padding-top:96px;scroll-margin-top:24px}
+    .hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr);min-height:540px;overflow:hidden;border-radius:var(--r-xl);background:var(--white);box-shadow:var(--shadow)}
+    .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:52px}
+    .eyebrow{margin:0 0 20px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h1{max-width:720px;margin:0;font-size:clamp(46px,4.5vw,60px);line-height:1.01;letter-spacing:-.045em;text-wrap:balance}
+    .hero-lead{max-width:680px;margin:24px 0 0;color:#435e6e;font-size:20px;line-height:1.52}
+    .hero-lead strong{color:var(--navy)}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .chip{padding:8px 12px;border-radius:999px;background:var(--sky);color:var(--blue-dark);font-size:13px;font-weight:700}
+    .hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .hero-nav a{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:800}
+    .hero-nav a:first-child{background:var(--blue);color:#fff}
+    .hero-nav a:last-child{border:1px solid var(--line);background:#fff}
+    .hero-media{position:relative;min-height:540px;overflow:hidden;background:#0d2b52}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:56% center}
+    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,24,44,.68),transparent 52%)}
+    .hero-caption{position:absolute;z-index:1;left:22px;right:22px;bottom:22px;padding:16px 18px;border:1px solid rgba(255,255,255,.27);border-radius:var(--r-sm);background:rgba(8,30,56,.7);backdrop-filter:blur(12px);color:#fff}
+    .hero-caption b{display:block;font-size:15px}
+    .hero-caption span{display:block;margin-top:4px;color:rgba(255,255,255,.74);font-size:12px}
+
+    .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,420px);gap:40px;align-items:end;margin-bottom:32px}
+    .label{margin:0 0 12px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h2{margin:0;font-size:clamp(35px,3.7vw,47px);line-height:1.06;letter-spacing:-.04em;text-wrap:balance}
+    .section-intro{margin:0;color:var(--muted);font-size:17px;line-height:1.55}
+
+    .contrast{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border-radius:var(--r-xl);box-shadow:var(--shadow-sm)}
+    .contrast article{min-height:310px;padding:38px}
+    .contrast .not{background:#e8edf2;color:#52636e}
+    .contrast .is{background:var(--blue);color:#fff}
+    .contrast small{display:block;margin-bottom:36px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .contrast h2{font-size:clamp(30px,3.1vw,42px)}
+    .contrast p{max-width:520px;margin:20px 0 0;font-size:17px}
+    .contrast .is p{color:rgba(255,255,255,.76)}
+    .contrast-mark{display:inline-grid;place-items:center;width:42px;height:42px;margin-bottom:20px;border-radius:50%;background:rgba(16,46,67,.08);font-size:20px;font-weight:500}
+    .is .contrast-mark{background:var(--green-bright);color:var(--navy)}
+
+    .brief-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+    .thesis{min-height:360px;padding:40px;border-radius:var(--r-xl);background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+    .thesis blockquote{max-width:770px;margin:0;font-size:clamp(30px,3.4vw,45px);line-height:1.08;letter-spacing:-.035em;font-weight:700}
+    .thesis p{max-width:680px;margin:28px 0 0;color:rgba(255,255,255,.73);font-size:17px}
+    .thesis small{font-size:12px;color:rgba(255,255,255,.58)}
+    .system-map{position:relative;display:grid;grid-template-rows:auto 1fr auto;min-height:360px;padding:30px;border:1px solid var(--line);border-radius:var(--r-xl);background:#fff}
+    .system-title{display:flex;justify-content:space-between;gap:16px;align-items:center}
+    .system-title b{font-size:17px}.system-title span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+    .engine{display:grid;place-items:center;align-self:center;width:180px;height:180px;margin:auto;border-radius:50%;background:conic-gradient(var(--blue) 0 25%,var(--cyan) 25% 50%,var(--green) 50% 75%,var(--navy) 75%);box-shadow:0 0 0 14px var(--sky),0 0 0 15px var(--line);color:#fff;text-align:center}
+    .engine b{display:block;font-size:30px;letter-spacing:-.05em}.engine span{display:block;margin-top:2px;font-size:12px}
+    .flow-labels{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;color:var(--muted);font-size:12px}
+    .flow-labels b{color:var(--navy)}.flow-labels i{color:var(--green);font-style:normal;font-size:20px}
+
+    .chapter-shell{overflow:hidden;border-radius:var(--r-xl);background:var(--navy);color:#fff;box-shadow:var(--shadow)}
+    .chapter-nav{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid rgba(255,255,255,.12)}
+    .chapter-tab{position:relative;min-height:96px;padding:20px;border:0;border-right:1px solid rgba(255,255,255,.12);background:transparent;color:#fff;text-align:left;cursor:pointer}
+    .chapter-tab:last-child{border:0}
+    .chapter-tab small{display:block;color:#83e5cd;font-size:12px;font-weight:800;letter-spacing:.11em}
+    .chapter-tab b{display:block;margin-top:8px;font-size:17px}
+    .chapter-tab::after{content:"";position:absolute;left:20px;right:20px;bottom:0;height:4px;border-radius:4px 4px 0 0;background:var(--green-bright);transform:scaleX(0);transition:transform .18s ease}
+    .chapter-tab[aria-selected="true"]{background:rgba(255,255,255,.06)}
+    .chapter-tab[aria-selected="true"]::after{transform:scaleX(1)}
+    .chapter-panel{display:grid;grid-template-columns:.95fr 1.05fr;min-height:470px}
+    .chapter-copy{display:flex;flex-direction:column;justify-content:center;padding:42px}
+    .chapter-kicker{color:#83e5cd;font-size:12px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .chapter-copy h3{max-width:530px;margin:12px 0 16px;font-size:clamp(31px,3.1vw,43px);line-height:1.06;letter-spacing:-.04em}
+    .chapter-copy p{max-width:560px;margin:0;color:rgba(255,255,255,.74);font-size:17px}
+    .chapter-decision{margin-top:26px;padding:18px;border-left:3px solid var(--green-bright);background:rgba(255,255,255,.06)}
+    .chapter-decision small{color:#83e5cd;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .chapter-decision b{display:block;margin-top:6px;font-size:15px}
+    .chapter-visual{position:relative;min-height:470px;overflow:hidden;background:#102b4d}
+    .chapter-visual img{width:100%;height:100%;min-height:470px;object-fit:cover;transition:opacity .18s ease}
+    .chapter-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,46,67,.24),transparent)}
+    .chapter-note{display:flex;justify-content:space-between;gap:18px;padding:14px 20px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.58);font-size:12px}
+
+    .layers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .layer{overflow:hidden;border:1px solid var(--line);border-radius:var(--r-md);background:#fff;box-shadow:var(--shadow-sm)}
+    .layer-head{display:grid;grid-template-columns:74px 1fr;gap:18px;align-items:center;padding:26px 28px;border-bottom:1px solid var(--line)}
+    .layer-code{display:grid;place-items:center;width:68px;height:68px;border-radius:18px;background:var(--blue);color:#fff;font-size:18px;font-weight:800;letter-spacing:.04em}
+    .layer:nth-child(2) .layer-code{background:var(--cyan)}
+    .layer:nth-child(3) .layer-code{background:var(--green)}
+    .layer:nth-child(4) .layer-code{background:var(--navy)}
+    .layer-head small{color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .layer-head h3{margin:5px 0 0;font-size:25px;line-height:1.12;letter-spacing:-.03em}
+    .diagram{height:190px;padding:24px;background:var(--sky)}
+    .layer:nth-child(3) .diagram{background:var(--mint)}
+    .mini-context{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;height:100%}
+    .mini-context span{display:grid;place-items:center;border:1px solid #bcd3e6;border-radius:14px;background:#fff;color:var(--blue-dark);font-size:13px;font-weight:800;text-align:center}
+    .mini-shelf{display:flex;align-items:flex-end;gap:9px;height:100%;padding:16px;border-bottom:8px solid var(--navy)}
+    .mini-shelf span{flex:1;border-radius:8px 8px 2px 2px;background:var(--blue);height:48%}.mini-shelf span:nth-child(2){height:72%;background:var(--cyan)}.mini-shelf span:nth-child(3){height:92%;background:var(--green)}.mini-shelf span:nth-child(4){height:60%;background:var(--navy)}.mini-shelf span:nth-child(5){height:82%;background:var(--blue)}
+    .mini-channels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;height:100%}
+    .mini-channels span{display:flex;align-items:flex-end;justify-content:center;padding:14px 8px;border-radius:14px;background:#fff;border:1px solid #c7e8df;color:var(--navy);font-size:12px;font-weight:800;text-align:center}
+    .mini-channels span::before{content:"";position:absolute}
+    .mini-loop{position:relative;height:100%}
+    .mini-loop::before{content:"";position:absolute;inset:8px 25%;border:12px solid var(--blue);border-right-color:var(--green);border-radius:50%}
+    .mini-loop::after{content:"измерить → изменить";position:absolute;inset:0;display:grid;place-items:center;color:var(--navy);font-size:13px;font-weight:800}
+    .layer-body{padding:28px}
+    .logic{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:start}
+    .logic div{padding:15px;border-radius:var(--r-sm);background:#f7f9fb}
+    .logic small{display:block;color:var(--blue);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .logic p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .logic i{align-self:center;color:var(--green);font-style:normal;font-size:20px}
+    .test{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:14px}
+    .test b{color:var(--green)}
+
+    .attendance{display:grid;grid-template-columns:.75fr 1.25fr;gap:20px}
+    .attendance-main{padding:34px;border-radius:var(--r-xl);background:linear-gradient(145deg,var(--blue-dark),var(--green));color:#fff}
+    .attendance-main b{display:block;font-size:76px;line-height:.92;letter-spacing:-.07em}
+    .attendance-main h3{max-width:360px;margin:18px 0 10px;font-size:24px;line-height:1.14}
+    .attendance-main p{margin:0;color:rgba(255,255,255,.72);font-size:14px}
+    .funnel{padding:30px;border:1px solid var(--line);border-radius:var(--r-xl);background:#fff}
+    .funnel-row{display:grid;grid-template-columns:150px 1fr 54px;gap:14px;align-items:center;margin:15px 0}
+    .funnel-row span{font-size:13px}.funnel-row b{text-align:right;font-size:18px}
+    .track{height:14px;border-radius:999px;background:#e7eef3;overflow:hidden}
+    .fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+    .funnel-row:nth-child(3) .fill,.funnel-row:nth-child(4) .fill{background:linear-gradient(90deg,var(--green),var(--green-bright))}
+    .funnel-note{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+    .benchmark{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--sky);color:var(--blue-dark);font-size:12px}
+
+    .synthesis{display:grid;grid-template-columns:.95fr 1.05fr;gap:20px}
+    .adaptive{padding:36px;border-radius:var(--r-xl);background:var(--navy);color:#fff}
+    .adaptive h3{margin:0;font-size:30px;line-height:1.1;letter-spacing:-.03em}
+    .adaptive p{color:rgba(255,255,255,.7)}
+    .adaptive-map{display:grid;gap:9px;margin-top:26px}
+    .adaptive-map div{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:13px;border-radius:12px;background:rgba(255,255,255,.07)}
+    .adaptive-map b{color:#86e5cf}.adaptive-map span{font-size:14px}
+    .diagnostic{padding:34px;border:1px solid var(--line);border-radius:var(--r-xl);background:#fff}
+    .diagnostic h3{margin:0;font-size:28px;letter-spacing:-.03em}
+    .checklist{display:grid;gap:10px;margin-top:22px}
+    .check{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;padding:13px;border-radius:12px;background:#f7f9fb}
+    .check b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--sky);color:var(--blue);font-size:12px}
+    .check p{margin:4px 0 0;font-size:15px}
+    .questions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+    .question{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;padding:22px;border:1px solid var(--line);border-radius:var(--r-sm);background:#fff}
+    .question b{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--sky);color:var(--blue);font-size:13px}
+    .question p{margin:0;font-size:17px;line-height:1.42}
+    .rights{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;margin-top:28px;padding:28px;border:1px solid #ead8ad;border-radius:var(--r-md);background:#fff7e5}
+    .rights h3{margin:0;font-size:20px}.rights p{max-width:820px;margin:7px 0 0;color:#755f37;font-size:14px}
+    footer{display:flex;justify-content:space-between;gap:24px;padding:30px 0 46px;color:var(--muted);font-size:12px}
+
+    .chapter-tab:focus-visible,.hero-nav a:focus-visible{outline:3px solid var(--green-bright);outline-offset:3px}
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}.hero-copy{padding:44px}.hero-media{min-height:440px}
+      .section-head{grid-template-columns:1fr;gap:18px}.brief-grid,.attendance,.synthesis{grid-template-columns:1fr}
+      .chapter-panel{grid-template-columns:1fr}.chapter-visual{min-height:390px;order:-1}.chapter-visual img{min-height:390px}
+      .layers{grid-template-columns:1fr}.chapter-nav{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:700px){
+      .wrap{width:min(100% - 28px,1232px)}.topbar{min-height:64px}.brand>span:last-child{display:none}
+      .hero{min-height:0;border-radius:22px}.hero-copy{padding:30px 24px}.hero-media{min-height:330px;order:-1}.hero-media img{object-position:center}
+      h1{font-size:clamp(36px,10vw,44px);line-height:1.04}.hero-lead{font-size:17px}.meta{margin-top:22px}
+      section{padding-top:72px}.section-head{margin-bottom:24px}h2{font-size:34px}.section-intro{font-size:16px}
+      .contrast{grid-template-columns:1fr}.contrast article{min-height:250px;padding:28px}
+      .thesis{min-height:320px;padding:28px}.thesis blockquote{font-size:31px}
+      .system-map{min-height:340px}.chapter-nav{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.chapter-tab{flex:0 0 72%;scroll-snap-align:start}
+      .chapter-copy{padding:30px 24px}.chapter-visual,.chapter-visual img{min-height:330px}.chapter-note{flex-direction:column}
+      .layer-head{padding:22px}.diagram{height:170px}.layer-body{padding:22px}.logic{grid-template-columns:1fr}.logic i{transform:rotate(90deg);justify-self:center}
+      .funnel{padding:22px}.funnel-row{grid-template-columns:116px 1fr 38px;gap:8px}.funnel-row span{font-size:12px}
+      .adaptive,.diagnostic{padding:26px}.questions{grid-template-columns:1fr}.question p{font-size:16px}
+      .rights{flex-direction:column}footer{flex-direction:column}
+    }
+    @media(max-width:390px){
+      .wrap{width:min(100% - 20px,1232px)}.status{font-size:12px;padding:6px 9px}
+      .hero-copy{padding:26px 20px}h1{font-size:35px}.hero-nav a{width:100%;justify-content:center}.hero-media{min-height:290px}.hero-caption{left:12px;right:12px;bottom:12px}
+      .layer-head{grid-template-columns:58px 1fr}.layer-code{width:56px;height:56px;font-size:14px}.question{grid-template-columns:42px 1fr;padding:18px}.question b{width:38px;height:38px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
   </style>
 </head>
-<body><main>
-  <section class="hero"><div class="eyebrow">ECR · review prototype</div>
-    <h1>Идеальный магазин будущего: от когорт до витрины</h1>
-    <div class="meta">19 августа 2026 · Рабочая встреча ECR</div>
-    <p>Эта обзорная страница собирает рабочую логику встречи о том, как проектировать магазин вокруг конкретной задачи покупателя, контекста и проверяемого сценария. Это тестовая версия для редакционной проверки, не утверждённый публичный анонс.</p>
-  </section>
-  <section aria-labelledby="insights"><h2 id="insights">Три идеи для проверки</h2><div class="grid">
-    <article class="card"><div class="num">01 · Контекст</div><h3>Магазин начинается с задачи</h3><p>Решение стоит проектировать под конкретную потребность, формат и территорию, а не под усреднённый образ магазина.</p></article>
-    <article class="card"><div class="num">02 · Сценарий</div><h3>Сценарий важнее декора</h3><p>Ассортимент, навигация, коммуникация и инфраструктура должны работать как единый путь выбора.</p></article>
-    <article class="card"><div class="num">03 · Масштаб</div><h3>Масштабируют доказанное</h3><p>Надёжная последовательность выглядит так: потребность → гипотеза → пилот → измерение → масштабирование.</p></article>
-  </div></section>
-  <div class="notice">● REVIEW · не для публичного анонса</div>
-  <div class="footer">Материалы, записи, презентации и атрибуции не включены в этот preview.</div>
-</main></body></html>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">ECR</span><span>Knowledge · Event Story</span></div>
+      <div class="status">External review · noindex</div>
+    </header>
+    <main>
+      <article>
+        <header class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Shopper / CatMan / RGM · рабочая встреча ECR</p>
+            <h1>Идеальный магазин будущего: от когорт до витрины</h1>
+            <p class="hero-lead"><strong>Будущее не выглядит как робот у полки.</strong> Оно выглядит как магазин, который перестал быть одинаковым для всех.</p>
+            <div class="meta"><span class="chip">19 августа 2026</span><span class="chip">Обезличенный обзор</span><span class="chip">Версия для согласования</span></div>
+            <nav class="hero-nav" aria-label="Навигация по странице"><a href="#answer">Что такое магазин будущего</a><a href="#chapters">Пройти четыре слоя</a></nav>
+          </div>
+          <figure class="hero-media">
+            <img src="images/hero-future-store.jpg" width="1672" height="941" alt="Обобщённый образ современного магазина с цифровой навигацией" fetchpriority="high">
+            <figcaption class="hero-caption"><b>Магазин как адаптивная система</b><span>Редакционная визуализация без брендов и идентифицируемых участников</span></figcaption>
+          </figure>
+        </header>
 
+        <section id="answer" aria-labelledby="answer-title">
+          <div class="contrast">
+            <article class="not"><span class="contrast-mark">×</span><small>Магазин будущего — не</small><h2 id="answer-title">Футуристический интерьер и не коллекция технологий</h2><p>Сенсоры, экраны и автоматы сами по себе не делают магазин релевантнее покупателю.</p></article>
+            <article class="is"><span class="contrast-mark">✓</span><small>На самом деле это</small><h2>Система, которая умеет меняться под задачу покупателя</h2><p>Она перестраивает ассортимент, навигацию, пространство, коммуникацию и канал — а затем проверяет решение измеримым пилотом.</p></article>
+          </div>
+        </section>
+
+        <section aria-labelledby="brief-title">
+          <div class="section-head"><div><p class="label">Главное за 90 секунд</p><h2 id="brief-title">Четыре кейса сложились в одну операционную модель</h2></div><p class="section-intro">Не четыре отдельные презентации, а четыре слоя одного адаптивного магазина.</p></div>
+          <div class="brief-grid">
+            <div class="thesis"><blockquote>Понять задачу → собрать решение → перенести его в нужную среду → измерить и изменить систему.</blockquote><div><p>Магазин будущего возникает там, где аналитика покупателя действительно меняет полку, интерфейс, оборудование и правила масштабирования.</p><small>Обезличенный редакционный синтез завершённой встречи</small></div></div>
+            <figure class="system-map" aria-label="Карта адаптивной системы магазина">
+              <div class="system-title"><b>Adaptive Store Engine</b><span>4 слоя</span></div>
+              <div class="engine"><div><b>SEE</b><span>SHAPE · CONNECT · LEARN</span></div></div>
+              <figcaption class="flow-labels"><span><b>Вход</b><br>задача и контекст</span><i>↔</i><span><b>Результат</b><br>опыт и обратная связь</span></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="chapters" aria-labelledby="chapters-title">
+          <div class="section-head"><div><p class="label">Интерактивная карта встречи</p><h2 id="chapters-title">SEE → SHAPE → CONNECT → LEARN</h2></div><p class="section-intro">Выберите слой. Это навигация по смыслу страницы, а не медиаплеер.</p></div>
+          <div class="chapter-shell">
+            <div class="chapter-nav" role="tablist" aria-label="Четыре слоя адаптивного магазина">
+              <button class="chapter-tab" id="tab-see" role="tab" aria-selected="true" aria-controls="chapter-panel" tabindex="0" data-phase="see"><small>01 · SEE</small><b>Увидеть задачу</b></button>
+              <button class="chapter-tab" id="tab-shape" role="tab" aria-selected="false" aria-controls="chapter-panel" tabindex="-1" data-phase="shape"><small>02 · SHAPE</small><b>Собрать решение</b></button>
+              <button class="chapter-tab" id="tab-connect" role="tab" aria-selected="false" aria-controls="chapter-panel" tabindex="-1" data-phase="connect"><small>03 · CONNECT</small><b>Связать среды</b></button>
+              <button class="chapter-tab" id="tab-learn" role="tab" aria-selected="false" aria-controls="chapter-panel" tabindex="-1" data-phase="learn"><small>04 · LEARN</small><b>Измерить эффект</b></button>
+            </div>
+            <div class="chapter-panel" id="chapter-panel" role="tabpanel" aria-labelledby="tab-see">
+              <div class="chapter-copy">
+                <span class="chapter-kicker" id="phase-kicker">Слой 01 · SEE</span>
+                <h3 id="phase-title">Начать не с магазина, а с покупательской задачи</h3>
+                <p id="phase-copy">Контекст точки, формат, территория и миссия покупки определяют, какое решение действительно будет полезно.</p>
+                <div class="chapter-decision"><small>Решение</small><b id="phase-decision">Сформулировать одну наблюдаемую задачу и выбрать сегмент, для которого она критична.</b></div>
+              </div>
+              <figure class="chapter-visual"><img id="phase-image" src="images/preview-shopper-missions.jpg" width="1672" height="941" alt="Разные анонимные покупательские миссии"></figure>
+            </div>
+            <div class="chapter-note"><span id="phase-test">Как проверить: задача меняет конкретное решение, а не только описание аудитории.</span><span>Глава страницы · без медиассылки</span></div>
+          </div>
+          <p id="phase-status" hidden aria-live="polite">Показан слой SEE</p>
+        </section>
+
+        <section aria-labelledby="layers-title">
+          <div class="section-head"><div><p class="label">Четыре кейса — одна система</p><h2 id="layers-title">Наблюдение → решение → как проверить</h2></div><p class="section-intro">Защищённые источники заменены оригинальными диаграммами, но аналитическая логика сохранена.</p></div>
+          <div class="layers">
+            <article class="layer" id="layer-see">
+              <header class="layer-head"><span class="layer-code">SEE</span><div><small>Контекст покупателя</small><h3>Одинаковая сеть — разные задачи</h3></div></header>
+              <div class="diagram"><div class="mini-context"><span>миссия</span><span>формат</span><span>территория</span><span>сегмент</span></div></div>
+              <div class="layer-body"><div class="logic"><div><small>Наблюдение</small><p>Усреднённый магазин скрывает различия между покупательскими задачами.</p></div><i>→</i><div><small>Решение</small><p>Определить, для кого и в каком контексте проектируется изменение.</p></div></div><div class="test"><b>Проверить:</b> изменилось ли конкретное решение магазина после сегментации.</div></div>
+            </article>
+            <article class="layer" id="layer-shape">
+              <header class="layer-head"><span class="layer-code">SHAPE</span><div><small>Ассортимент и навигация</small><h3>Больше выбора ≠ проще выбрать</h3></div></header>
+              <div class="diagram"><div class="mini-shelf"><span></span><span></span><span></span><span></span><span></span></div></div>
+              <div class="layer-body"><div class="logic"><div><small>Наблюдение</small><p>Расширение полки может увеличить сложность, но не ценность выбора.</p></div><i>→</i><div><small>Решение</small><p>Собрать матрицу и навигацию вокруг сценария решения.</p></div></div><div class="test"><b>Проверить:</b> стало ли покупателю легче различать варианты и завершать выбор.</div></div>
+            </article>
+            <article class="layer" id="layer-connect">
+              <header class="layer-head"><span class="layer-code">CONNECT</span><div><small>Физический и цифровой путь</small><h3>Одна механика не живёт во всех каналах</h3></div></header>
+              <div class="diagram"><div class="mini-channels"><span>касса</span><span>самообслуживание</span><span>digital</span></div></div>
+              <div class="layer-body"><div class="logic"><div><small>Наблюдение</small><p>Время, пространство и внимание различаются между тремя средами.</p></div><i>→</i><div><small>Решение</small><p>Пересобрать контакт под естественный момент каждого пути.</p></div></div><div class="test"><b>Проверить:</b> заметность, релевантность и отсутствие лишнего трения.</div></div>
+            </article>
+            <article class="layer" id="layer-learn">
+              <header class="layer-head"><span class="layer-code">LEARN</span><div><small>Пилот и обратная связь</small><h3>Концепция ценна только после измерения</h3></div></header>
+              <div class="diagram"><div class="mini-loop"></div></div>
+              <div class="layer-body"><div class="logic"><div><small>Наблюдение</small><p>Аналитический инсайт сам по себе не меняет магазин.</p></div><i>→</i><div><small>Решение</small><p>Назначить владельца, критерий эффекта и ворота масштаба.</p></div></div><div class="test"><b>Проверить:</b> есть ли решение «масштабировать, изменить или остановить».</div></div>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="audience-title">
+          <div class="section-head"><div><p class="label">Агрегированное участие</p><h2 id="audience-title">Регистрация и присутствие — разные сигналы</h2></div><p class="section-intro">Показываем только обезличенные агрегаты. Регистрационные записи не выдаются за фактическую посещаемость.</p></div>
+          <div class="attendance">
+            <div class="attendance-main"><b>48</b><h3>уникальных участников содержательной онлайн-части</h3><p>Источник: официальный агрегированный отчёт онлайн-присутствия. Персональные данные исключены.</p></div>
+            <div class="funnel" aria-label="Воронка регистрации и онлайн-участия">
+              <div class="funnel-row"><span>Регистрационные записи</span><div class="track"><div class="fill" style="width:100%"></div></div><b>176</b></div>
+              <div class="funnel-row"><span>Онлайн-регистрация</span><div class="track"><div class="fill" style="width:50%"></div></div><b>88</b></div>
+              <div class="funnel-row"><span>Уникальное участие</span><div class="track"><div class="fill" style="width:27.3%"></div></div><b>48</b></div>
+              <div class="funnel-row"><span>Не менее 60 минут</span><div class="track"><div class="fill" style="width:21.6%"></div></div><b>38</b></div>
+              <p class="funnel-note">Воронка объединяет разные источники и не является прямой конверсией одной когорты. Фактический офлайн check-in не подтверждён и не моделируется.</p>
+              <div class="benchmark">Сопоставимый публичный benchmark предыдущих встреч серии не подтверждён — сравнение намеренно не показываем.</div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="diagnostic-title">
+          <div class="section-head"><div><p class="label">Cross-case synthesis</p><h2 id="diagnostic-title">Магазин будущего — это цикл, а не конечная картинка</h2></div><p class="section-intro">Система видит изменение покупательской задачи, адаптирует решение и учится на измеренном результате.</p></div>
+          <div class="synthesis">
+            <div class="adaptive"><h3>Вход → адаптивный движок → опыт → обратная связь</h3><p>Пять управляемых элементов меняются не по отдельности, а как единая гипотеза.</p><div class="adaptive-map"><div><b>Вход</b><span>задача, сегмент, территория, формат</span></div><div><b>Движок</b><span>ассортимент, навигация, пространство, коммуникация, канал</span></div><div><b>Опыт</b><span>понятный выбор без лишнего трения</span></div><div><b>Feedback</b><span>метрика пилота и решение по масштабу</span></div></div></div>
+            <div class="diagnostic"><h3>Пять вопросов: готов ли магазин к будущему?</h3><div class="checklist"><div class="check"><b>01</b><p>Какую конкретную покупательскую задачу мы решаем?</p></div><div class="check"><b>02</b><p>Что должно адаптироваться под контекст точки?</p></div><div class="check"><b>03</b><p>Как решение меняется между кассой, самообслуживанием и digital?</p></div><div class="check"><b>04</b><p>Кто владеет пилотом и какой эффект считается успехом?</p></div><div class="check"><b>05</b><p>Какое правило определяет: масштабировать, изменить или остановить?</p></div></div></div>
+          </div>
+
+          <div class="section-head" style="margin-top:72px"><div><p class="label">Что унесли с собой</p><h2>Открытые вопросы рынка</h2></div><p class="section-intro">Повестка для следующих пилотов — без закрытых атрибуций и неподтверждённых цифр.</p></div>
+          <div class="questions">
+            <article class="question"><b>01</b><p>Как считать совокупный финансовый эффект работы с покупательскими сегментами?</p></article>
+            <article class="question"><b>02</b><p>Как совместить единое предложение сети с адресной ассортиментной матрицей?</p></article>
+            <article class="question"><b>03</b><p>Как перенести импульсный выбор в digital без перегрузки интерфейса?</p></article>
+            <article class="question"><b>04</b><p>Кто финансирует перепроектирование и на каком горизонте оценивается пилот?</p></article>
+            <article class="question"><b>05</b><p>Какие данные и правила нужны для совместного управления покупательской задачей?</p></article>
+          </div>
+          <aside class="rights" aria-label="Статус и права страницы"><div><h3>Обезличенная редакционная версия для согласования</h3><p>Закрытые материалы, компании, участники, цитаты и внутренние ссылки не включены. Оригинальные диаграммы сохраняют аналитическую структуру без раскрытия защищённых источников.</p></div><div class="status">External review · noindex</div></aside>
+        </section>
+      </article>
+    </main>
+    <footer><span>ECR Knowledge · Event Story</span><span>Не является публичным анонсом</span></footer>
+  </div>
+
+  <script>
+    (()=>{
+      const phases={
+        see:{kicker:'Слой 01 · SEE',title:'Начать не с магазина, а с покупательской задачи',copy:'Контекст точки, формат, территория и миссия покупки определяют, какое решение действительно будет полезно.',decision:'Сформулировать одну наблюдаемую задачу и выбрать сегмент, для которого она критична.',test:'Как проверить: задача меняет конкретное решение, а не только описание аудитории.',image:'images/preview-shopper-missions.jpg',alt:'Разные анонимные покупательские миссии'},
+        shape:{kicker:'Слой 02 · SHAPE',title:'Собрать ассортимент и навигацию вокруг сценария выбора',copy:'Чем сложнее категория, тем важнее объяснить различия и основания выбора, а не просто увеличить число вариантов.',decision:'Связать ассортиментную матрицу, навигацию и контекст конкретной точки.',test:'Как проверить: покупатель быстрее понимает различия и увереннее завершает выбор.',image:'images/preview-choice-navigation.jpg',alt:'Анонимный выбор между товарами у полки'},
+        connect:{kicker:'Слой 03 · CONNECT',title:'Перенести механику контакта, а не копировать выкладку',copy:'Касса, самообслуживание и digital дают разное время, пространство и внимание. Каждой среде нужен свой способ контакта.',decision:'Найти естественный момент выбора в каждом канале и убрать лишнее трение.',test:'Как проверить: контакт заметен и релевантен, но не мешает основному пути.',image:'images/preview-three-environments.jpg',alt:'Три анонимные среды покупки'},
+        learn:{kicker:'Слой 04 · LEARN',title:'Замкнуть решение в измеримый цикл обучения',copy:'Сегментация становится операционной системой только вместе с владельцем, пилотом, KPI и решением по масштабу.',decision:'Заранее определить критерий эффекта и ворота «масштабировать, изменить или остановить».',test:'Как проверить: после пилота принято конкретное управленческое решение.',image:'images/hero-future-store.jpg',alt:'Обобщённый образ адаптивного магазина'}
+      };
+      const tabs=[...document.querySelectorAll('.chapter-tab')];
+      const nodes={
+        panel:document.getElementById('chapter-panel'),
+        kicker:document.getElementById('phase-kicker'),
+        title:document.getElementById('phase-title'),
+        copy:document.getElementById('phase-copy'),
+        decision:document.getElementById('phase-decision'),
+        test:document.getElementById('phase-test'),
+        image:document.getElementById('phase-image'),
+        status:document.getElementById('phase-status')
+      };
+      function activate(tab){
+        const data=phases[tab.dataset.phase];
+        tabs.forEach(item=>{const active=item===tab;item.setAttribute('aria-selected',String(active));item.tabIndex=active?0:-1});
+        nodes.image.style.opacity='0';
+        window.setTimeout(()=>{nodes.image.src=data.image;nodes.image.alt=data.alt;nodes.image.style.opacity='1'},100);
+        nodes.kicker.textContent=data.kicker;
+        nodes.title.textContent=data.title;
+        nodes.copy.textContent=data.copy;
+        nodes.decision.textContent=data.decision;
+        nodes.test.textContent=data.test;
+        nodes.panel.setAttribute('aria-labelledby',tab.id);
+        nodes.status.textContent='Показан слой '+tab.dataset.phase.toUpperCase();
+      }
+      tabs.forEach((tab,index)=>{
+        tab.addEventListener('click',()=>activate(tab));
+        tab.addEventListener('keydown',event=>{
+          let next=index;
+          if(event.key==='ArrowRight'||event.key==='ArrowDown')next=(index+1)%tabs.length;
+          else if(event.key==='ArrowLeft'||event.key==='ArrowUp')next=(index-1+tabs.length)%tabs.length;
+          else if(event.key==='Home')next=0;
+          else if(event.key==='End')next=tabs.length-1;
+          else return;
+          event.preventDefault();activate(tabs[next]);tabs[next].focus();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
