@@ -4,228 +4,255 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="description" content="Редакционный обзор рабочей встречи ECR о магазине будущего как адаптивной коммерческой системе.">
   <title>Идеальный магазин будущего — ECR · редакционная версия</title>
-  <meta name="description" content="Обезличенная редакционная версия итогов рабочей встречи ECR 19 августа 2026 года.">
   <style>
     :root{
-      --ink:#102f2c;--muted:#60736f;--line:#d5e3df;--paper:#f5faf8;--white:#fff;
-      --blue:#173b75;--blue2:#2f59b7;--teal:#087f77;--green:#2eaa86;--mint:#dff3ec;
-      --sky:#e8f1ff;--amber:#fff3d5;--shadow:0 18px 52px rgba(16,47,44,.10);
-      --shadow-small:0 10px 28px rgba(16,47,44,.07);--r:24px
+      --ink:#11130f;--ivory:#f3efe5;--paper:#fffdf7;--cobalt:#154ee9;
+      --green:#00bd78;--blue-soft:#dce7ff;--green-soft:#d9f7e9;
+      --rule:#b9b5aa;--muted:#5f615a;--white:#fff;--max:1280px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:linear-gradient(180deg,#eef7f4 0,#f8fbfa 520px,#fff 100%);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5}
-    a,button{font:inherit}.wrap{width:min(1240px,calc(100% - 36px));margin:auto}
-    .top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .topin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:850}
-    .mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--teal),var(--blue));box-shadow:0 8px 20px rgba(8,127,119,.25)}
-    .nav{display:flex;gap:7px;overflow:auto;scrollbar-width:none}.nav a{white-space:nowrap;text-decoration:none;padding:8px 11px;border-radius:99px;color:var(--muted);font-size:13px;font-weight:750}
-    .nav a:hover,.nav a:focus-visible{background:var(--mint);color:var(--ink);outline:none}
-    .review{display:inline-flex;gap:8px;align-items:center;color:#7a5713;font-size:12px;font-weight:850}.dot{width:8px;height:8px;border-radius:50%;background:#d69a25;box-shadow:0 0 0 4px #fff0ca}
-    .hero{padding:42px 0 28px}.heroGrid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(360px,.94fr);gap:24px;align-items:stretch}
-    .heroCopy,.heroSystem{border:1px solid var(--line);border-radius:30px;background:rgba(255,255,255,.94);box-shadow:var(--shadow);overflow:hidden}
-    .heroCopy{padding:40px;position:relative}.heroCopy:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;right:-120px;top:-120px;background:radial-gradient(circle,#bde7dd 0,rgba(189,231,221,0) 68%);pointer-events:none}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.chip{padding:7px 11px;border-radius:999px;background:var(--mint);color:#0c685d;font-size:12px;font-weight:900;letter-spacing:.02em}.chip.blue{background:var(--sky);color:var(--blue)}
-    h1{font-size:clamp(38px,5.3vw,68px);line-height:.98;letter-spacing:-.055em;margin:0;max-width:760px}h1 span{color:var(--teal)}
-    .lead{font-size:clamp(18px,2vw,23px);line-height:1.35;color:#334e49;margin:24px 0 0;max-width:760px}
-    .heroActions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:11px 17px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);background:#fff;font-weight:850}.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}.btn:hover,.btn:focus-visible{transform:translateY(-1px);box-shadow:0 10px 24px rgba(16,47,44,.11);outline:3px solid rgba(46,170,134,.28);outline-offset:2px}
-    .heroSystem{padding:25px;background:linear-gradient(150deg,#102f2c 0,#153c67 62%,#0b756e 100%);color:#fff;display:grid;align-content:space-between;min-height:520px}
-    .systemTop{display:flex;align-items:center;justify-content:space-between;gap:12px}.systemTop b{font-size:13px;letter-spacing:.13em;text-transform:uppercase}.systemTop span{font-size:11px;color:#b9d8d3}
-    .systemCore{margin:24px auto;width:min(360px,100%);aspect-ratio:1;position:relative;display:grid;place-items:center}
-    .ring{position:absolute;inset:7%;border:1px solid rgba(255,255,255,.22);border-radius:50%}.ring:before,.ring:after{content:"";position:absolute;border-radius:50%;border:1px dashed rgba(255,255,255,.17)}.ring:before{inset:14%}.ring:after{inset:29%}
-    .engine{position:relative;z-index:2;width:47%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;background:linear-gradient(145deg,#fff,#dff3ec);color:var(--ink);box-shadow:0 22px 55px rgba(0,0,0,.24)}.engine b{font-size:20px}.engine span{display:block;font-size:9px;margin-top:5px;color:var(--muted);font-weight:800;letter-spacing:.07em}
-    .orbit{position:absolute;z-index:3;width:86px;padding:10px;border-radius:14px;background:rgba(255,255,255,.96);color:var(--ink);box-shadow:0 10px 28px rgba(0,0,0,.16);font-size:10px;font-weight:900;text-align:center}.orbit small{display:block;color:var(--teal);font-size:9px;letter-spacing:.08em;margin-bottom:3px}.o1{left:0;top:10%}.o2{right:0;top:10%}.o3{left:0;bottom:8%}.o4{right:0;bottom:8%}
-    .feedback{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.feedback div{padding:11px 8px;border-radius:11px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);font-size:10px;text-align:center;color:#d8ebe8}.feedback b{display:block;color:#fff;font-size:11px}
-    section{padding:34px 0;scroll-margin-top:80px}.sectionHead{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.36fr);gap:20px;align-items:end;margin-bottom:20px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--teal);font-weight:950}.sectionHead h2{font-size:clamp(31px,4.3vw,52px);letter-spacing:-.045em;line-height:1.03;margin:7px 0 0}.sectionHead p{margin:0;color:var(--muted);font-size:15px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow-small)}
-    .brief{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.thesis{padding:28px}.thesis h3{font-size:25px;margin:0 0 10px;letter-spacing:-.025em}.thesis p{margin:0;color:#38534e;font-size:17px}.thesis strong{color:var(--blue)}.definition{padding:26px;background:linear-gradient(145deg,var(--blue),#0b766f);color:#fff;border:none}.definition h3{margin:0 0 10px;font-size:18px}.definition p{margin:0;color:#e3f7f2}
-    .contrast{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.contrastCard{padding:21px}.contrastCard.bad{background:#f5f7f6}.contrastCard.good{background:#eef6ff;border-color:#cbdcf4}.contrastCard .sign{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#e4ebe8;font-weight:950}.contrastCard.good .sign{background:#d8f2e8;color:#087257}.contrastCard h3{font-size:20px;line-height:1.14;margin:12px 0 7px}.contrastCard p{font-size:14px;color:var(--muted);margin:0}
-    .editorialCounts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.count{padding:18px}.count b{display:block;font-size:34px;letter-spacing:-.05em;color:var(--teal)}.count span{font-weight:850}.count small{display:block;color:var(--muted);font-size:11px;margin-top:8px}
-    .tabs{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #294a62;background:#153247;border-radius:18px 18px 0 0;overflow:hidden}.tab{min-height:75px;border:0;border-right:1px solid #294a62;background:transparent;color:#b7cdc9;text-align:left;padding:13px 15px;cursor:pointer}.tab:last-child{border-right:0}.tab small{display:block;font-size:9px;letter-spacing:.13em;margin-bottom:5px}.tab b{color:#fff;font-size:13px}.tab[aria-selected="true"]{background:#0d6d64;color:#e3fbf5;box-shadow:inset 0 -4px 0 #59c9a9}.tab:focus-visible{outline:3px solid #82dbc2;outline-offset:-4px}
-    .layerPanel{border-radius:0 0 24px 24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;background:#102f45;color:#fff;min-height:390px}.layerCopy{padding:32px}.layerCopy .eyebrow{color:#78d6bb}.layerCopy h3{font-size:clamp(28px,3.6vw,44px);line-height:1.02;letter-spacing:-.04em;margin:9px 0 14px}.layerCopy>p{color:#c9dcda;max-width:560px}.decisionBox{margin-top:20px;padding:15px;border-left:4px solid #54c6a5;background:rgba(255,255,255,.07);font-size:13px}.decisionBox b{display:block;color:#83e0c5;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
-    .layerVisual{display:grid;place-items:center;padding:28px;background:linear-gradient(145deg,#eaf2ff,#dff3ec);color:var(--ink)}.layerDiagram{width:min(430px,100%);min-height:285px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 18px 44px rgba(16,47,44,.12)}.diagramTitle{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.diagramTitle b{font-size:15px}.diagramTitle span{font-size:10px;color:var(--muted)}.diagramStage{min-height:178px;display:grid;align-items:center}.diagramNote{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
-    .missionGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.missionGrid span{padding:14px 10px;border-radius:11px;background:var(--sky);color:var(--blue);font-weight:850;text-align:center;font-size:12px}.choiceBars{height:160px;display:flex;align-items:flex-end;justify-content:center;gap:12px;border-bottom:5px solid var(--ink)}.choiceBars i{display:block;width:18%;border-radius:7px 7px 0 0;background:var(--blue2)}.choiceBars i:nth-child(1){height:35%}.choiceBars i:nth-child(2){height:62%;background:#4aa5cd}.choiceBars i:nth-child(3){height:85%;background:var(--green)}.choiceBars i:nth-child(4){height:52%;background:var(--ink)}.choiceBars i:nth-child(5){height:70%}
-    .channelGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.channelGrid div{min-height:112px;border:1px solid var(--line);border-radius:13px;display:grid;place-items:center;text-align:center;padding:9px;background:var(--paper);font-weight:900;font-size:11px}.channelGrid small{display:block;color:var(--muted);font-weight:600;margin-top:5px}.learnLoop{width:210px;height:130px;margin:auto;border:14px solid var(--blue2);border-right-color:var(--green);border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;text-align:center;position:relative}.learnLoop:after{content:"↗";position:absolute;right:-13px;top:3px;color:var(--green);font-size:28px}
-    .caseGrid{display:grid;gap:22px}.case{display:grid;grid-template-columns:minmax(300px,.88fr) minmax(0,1.12fr);overflow:hidden}.caseVisual{margin:0;background:#e9f1ee;min-height:340px;display:grid;place-items:center;padding:22px}.caseBody{padding:28px}.caseMeta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}.caseMeta span{font-size:11px;font-weight:900;padding:6px 8px;border-radius:8px;background:var(--sky);color:var(--blue)}.caseBody h3{font-size:29px;letter-spacing:-.035em;line-height:1.07;margin:0 0 8px}.caseIntro{color:#415954;margin:0 0 18px}.chain{display:grid;grid-template-columns:1fr 24px 1fr;gap:8px;align-items:stretch}.chainBlock{background:var(--paper);border-radius:12px;padding:13px}.chainBlock b{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}.chainBlock p{font-size:13px;margin:0;color:#334f49}.arrow{display:grid;place-items:center;color:var(--teal);font-weight:950}.test{border-top:1px solid var(--line);padding-top:14px;margin-top:14px;font-size:13px}.test b{display:block;margin-bottom:4px}.source{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.35}
-    .vizCard{width:100%;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 14px 36px rgba(16,47,44,.09)}.vizLabel{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:950}.vizTitle{font-size:18px;line-height:1.15;margin:7px 0 16px;font-weight:900}.lens{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.lens div{min-height:58px;border-radius:10px;background:var(--sky);display:grid;place-items:center;text-align:center;font-size:11px;font-weight:850;padding:7px}.lens div:nth-child(3),.lens div:nth-child(4){background:var(--mint)}.choicePath{display:flex;align-items:center;gap:7px}.choicePath span{flex:1;min-height:70px;border-radius:10px;background:var(--sky);display:grid;place-items:center;text-align:center;font-size:11px;font-weight:850;padding:7px}.choicePath i{font-style:normal;color:var(--teal);font-weight:950}.threeWays{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.threeWays div{height:100px;border-radius:11px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;text-align:center;font-size:11px;font-weight:850}.threeWays div:nth-child(2){background:var(--mint)}.threeWays div:nth-child(3){background:var(--sky)}.ownerFlow{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.ownerFlow div{min-height:90px;border-radius:11px;display:grid;place-items:center;text-align:center;padding:7px;background:#edf3ff;color:var(--blue);font-size:10px;font-weight:900}.ownerFlow div:last-child{background:var(--mint);color:#086455}
-    .attendance{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px}.attendanceMain{padding:27px;background:linear-gradient(150deg,#112f5f,#0b756e);color:#fff;border:none}.attendanceMain b{font-size:58px;line-height:1;letter-spacing:-.06em}.attendanceMain p{color:#dceeea}.bars{padding:25px}.barrow{display:grid;grid-template-columns:155px 1fr 42px;gap:12px;align-items:center;margin:13px 0;font-size:13px}.track{height:10px;border-radius:9px;background:#e7efec;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--blue2),#51b5d3);border-radius:9px}.fill.green{background:linear-gradient(90deg,var(--teal),#45bfa7)}.limits{margin-top:16px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}.noBaseline{margin-top:12px;padding:10px 12px;border-radius:10px;background:var(--sky);color:#37537b;font-size:11px}
-    .synthesis{display:grid;grid-template-columns:1fr 1fr;gap:16px}.listCard{padding:25px}.listCard.dark{background:#132f43;color:#fff;border:none}.listCard h3{margin:0 0 12px;font-size:22px}.listCard ul{margin:0;padding-left:20px}.listCard li+li{margin-top:9px}.listCard.dark li{color:#d8e7e4}.path{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-top:18px}.step{padding:15px 12px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:14px;font-weight:850;font-size:13px}.step:not(:last-child):after{content:"→";float:right;color:var(--teal)}
-    .diagnostic{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.question{padding:18px;min-height:180px;position:relative}.question .num{font-size:11px;font-weight:950;color:var(--blue2);letter-spacing:.12em}.question h3{font-size:16px;line-height:1.2;margin:11px 0 8px}.question p{font-size:12px;color:var(--muted);margin:0}.question:after{content:"";position:absolute;left:18px;right:18px;bottom:15px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--blue2),var(--green))}
-    .openGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.openQ{padding:17px;display:flex;gap:12px;align-items:flex-start}.openQ b{min-width:26px;height:26px;border-radius:8px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-size:10px}.openQ p{margin:2px 0 0;font-size:14px}.rights{padding:21px;border:1px dashed #d69f62;background:#fff8ea;border-radius:18px;color:#654215;font-size:13px;margin-top:16px}.rights b{display:block;margin-bottom:5px}.footer{padding:32px 0 48px;color:var(--muted);font-size:12px}.footerin{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:980px){.nav{display:none}.heroGrid,.brief,.case,.attendance{grid-template-columns:1fr}.heroSystem{min-height:500px}.sectionHead{grid-template-columns:1fr}.editorialCounts{grid-template-columns:repeat(3,1fr)}.tabs{grid-template-columns:repeat(2,1fr)}.tab:nth-child(2){border-right:0}.tab:nth-child(-n+2){border-bottom:1px solid #294a62}.layerPanel{grid-template-columns:1fr}.caseVisual{min-height:260px}.synthesis{grid-template-columns:1fr}.diagnostic{grid-template-columns:repeat(2,1fr)}.path{grid-template-columns:1fr}.step:not(:last-child):after{content:"↓"}}
-    @media(max-width:640px){.wrap{width:min(100% - 22px,1240px)}.topin{height:60px}.review{display:none}.hero{padding-top:20px}.heroCopy{padding:25px}.heroSystem{padding:18px;min-height:460px}h1{font-size:39px}.lead{font-size:17px}.heroActions{display:grid}.btn{width:100%}.contrast,.editorialCounts,.openGrid{grid-template-columns:1fr}.tabs{grid-template-columns:1fr}.tab{border-right:0;border-bottom:1px solid #294a62;min-height:62px}.tab:last-child{border-bottom:0}.layerCopy{padding:23px}.layerVisual{padding:15px}.caseBody{padding:20px}.caseBody h3{font-size:25px}.chain{grid-template-columns:1fr}.arrow{transform:rotate(90deg);min-height:16px}.attendanceMain b{font-size:52px}.barrow{grid-template-columns:115px 1fr 32px;gap:8px}.diagnostic{display:flex;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.question{min-width:84vw;scroll-snap-align:start}.footerin{display:block}.systemCore{width:100%}.orbit{width:78px;font-size:9px}.feedback{grid-template-columns:repeat(2,1fr)}}
-    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    html{scroll-behavior:smooth;background:var(--ivory)}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.45;text-rendering:optimizeLegibility}
+    button,a{font:inherit;color:inherit}a{text-decoration:none}
+    button{border:0}
+    :focus-visible{outline:3px solid var(--green);outline-offset:4px}
+    .skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;padding:10px 14px}.skip:focus{left:8px}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .top{position:sticky;top:0;z-index:30;background:rgba(243,239,229,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--ink)}
+    .topin{height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.02em}
+    .brandMark{width:34px;height:34px;background:var(--ink);color:#fff;display:grid;place-items:center;border-radius:50%;font-size:13px}
+    .nav{display:flex;gap:4px;align-items:center}.nav a{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px}
+    .status{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;display:flex;align-items:center;gap:8px;white-space:nowrap}.status:before{content:"";width:8px;height:8px;background:#e9af25;border-radius:50%}
+    .hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);border-bottom:1px solid var(--ink)}
+    .heroCopy{padding:72px max(48px,calc((100vw - var(--max))/2 + 24px)) 54px max(24px,calc((100vw - var(--max))/2));display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+    .heroMeta{display:flex;gap:8px;flex-wrap:wrap}.pill{border:1px solid var(--ink);border-radius:100px;padding:7px 11px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}.pill.green{background:var(--green-soft)}
+    h1{font-size:clamp(56px,6.4vw,100px);line-height:.88;letter-spacing:-.075em;margin:32px 0 28px;max-width:760px;font-weight:900}
+    h1 em{font-style:normal;color:var(--cobalt)}
+    .heroLead{font-size:clamp(20px,2vw,30px);line-height:1.18;letter-spacing:-.025em;max-width:700px;margin:0}
+    .heroLead strong{font-weight:900}
+    .heroBottom{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-top:44px;padding-top:22px;border-top:1px solid var(--ink)}
+    .heroBottom p{margin:0;max-width:520px;font-size:14px;color:var(--muted)}
+    .down{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}.down span{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center}
+    .heroMap{background:var(--cobalt);color:#fff;position:relative;overflow:hidden;min-height:620px;display:grid;place-items:center;padding:46px}
+    .heroMap:before,.heroMap:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.25);border-radius:50%;inset:10%}.heroMap:after{inset:24%;border-style:dashed}
+    .mapFloor{position:relative;width:min(520px,100%);aspect-ratio:1;z-index:2}
+    .mapFloor svg{width:100%;height:100%;overflow:visible}
+    .mapCaption{position:absolute;left:36px;top:32px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:900}
+    .mapLegend{position:absolute;right:32px;bottom:28px;text-align:right;font-size:11px;line-height:1.35;max-width:160px;color:rgba(255,255,255,.78)}
+    .thesis{background:var(--ink);color:#fff;border-bottom:1px solid var(--ink)}
+    .thesisGrid{display:grid;grid-template-columns:.72fr 1.28fr}
+    .thesisNo,.thesisYes{padding:74px 5vw}.thesisNo{border-right:1px solid rgba(255,255,255,.32)}.thesisYes{background:var(--green);color:var(--ink)}
+    .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;margin-bottom:18px}.thesis h2{font-size:clamp(38px,5vw,72px);line-height:.96;letter-spacing:-.055em;margin:0}.thesis p{font-size:clamp(17px,1.8vw,25px);line-height:1.28;margin:22px 0 0;max-width:720px}
+    section{border-bottom:1px solid var(--ink)}
+    .sectionPad{padding:88px 0}
+    .sectionIntro{display:grid;grid-template-columns:160px minmax(0,1fr);gap:36px;align-items:start;margin-bottom:56px}
+    .sectionNum{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;padding-top:10px}.sectionIntro h2{font-size:clamp(42px,6vw,84px);line-height:.94;letter-spacing:-.06em;margin:0;max-width:980px}.sectionIntro .dek{font-size:18px;color:var(--muted);max-width:720px;margin:24px 0 0}
+    .system{background:var(--paper)}
+    .systemStage{display:grid;grid-template-columns:280px minmax(0,1fr);border:1px solid var(--ink);min-height:580px}
+    .systemTabs{display:flex;flex-direction:column;border-right:1px solid var(--ink);background:var(--ivory)}
+    .systemTab{flex:1;min-height:90px;text-align:left;padding:18px 22px;background:transparent;border-bottom:1px solid var(--ink);cursor:pointer;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}.systemTab:last-child{border-bottom:0}.systemTab[aria-selected="true"]{background:var(--cobalt);color:#fff}.systemTab .n{font-size:11px;font-weight:900;opacity:.72}.systemTab b{font-size:18px;letter-spacing:-.02em}.systemPanel{padding:48px;display:grid;grid-template-columns:minmax(0,.75fr) minmax(360px,1.25fr);gap:44px;align-items:center}
+    .systemPanel h3{font-size:clamp(34px,4vw,58px);line-height:.98;letter-spacing:-.05em;margin:0 0 20px}.systemPanel p{font-size:18px;margin:0;color:#3f413c}.systemPanel .question{margin-top:28px;border-left:5px solid var(--green);padding:4px 0 4px 18px;font-weight:800}
+    .machine{height:380px;position:relative;display:grid;place-items:center}.machine svg{width:100%;height:100%}.machineLabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;width:170px}.machineLabel b{display:block;font-size:20px}.machineLabel span{font-size:11px;color:var(--muted)}
+    .cases{background:var(--ivory)}
+    .caseStory{display:grid;grid-template-columns:140px minmax(0,.92fr) minmax(360px,1.08fr);gap:34px;padding:58px 0;border-top:1px solid var(--ink);align-items:start}.caseStory:last-child{border-bottom:1px solid var(--ink)}
+    .caseIndex{font-size:88px;font-weight:900;line-height:.8;letter-spacing:-.08em;color:var(--cobalt)}.caseTag{display:inline-flex;background:var(--ink);color:#fff;padding:6px 9px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+    .caseCopy h3{font-size:clamp(34px,4vw,58px);line-height:.95;letter-spacing:-.052em;margin:0 0 18px}.caseCopy>p{font-size:18px;margin:0;color:#41433e;max-width:610px}.caseCopy .insight{font-size:23px;line-height:1.2;font-weight:800;color:var(--cobalt);margin-top:28px}
+    .evidenceChain{margin-top:32px;border-top:1px solid var(--ink)}.chainRow{display:grid;grid-template-columns:118px 1fr;gap:18px;padding:13px 0;border-bottom:1px solid var(--rule)}.chainRow b{font-size:10px;text-transform:uppercase;letter-spacing:.1em}.chainRow span{font-size:14px}
+    .caseVisual{border:1px solid var(--ink);background:var(--paper);min-height:460px;position:sticky;top:92px;overflow:hidden}.visualHeader{height:48px;border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.09em}.visualHeader span:last-child{color:var(--muted)}.visualBody{height:410px;padding:24px;position:relative}.visualBody svg{width:100%;height:100%}
+    .sourceNote{font-size:11px;color:var(--muted);margin-top:14px}.sourceNote:before{content:"●";color:var(--green);margin-right:7px}
+    .tensions{background:var(--cobalt);color:#fff}
+    .tensions .sectionNum,.tensions .dek{color:rgba(255,255,255,.75)}
+    .tensionGrid{border-top:1px solid rgba(255,255,255,.55)}.tension{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.55)}.tension strong{font-size:24px;letter-spacing:-.025em}.tension strong:last-child{text-align:right}.axis{height:5px;background:rgba(255,255,255,.35);position:relative}.axis:before{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--green);top:50%;left:var(--pos,50%);transform:translate(-50%,-50%);border:4px solid var(--cobalt);box-shadow:0 0 0 1px #fff}.tension p{grid-column:2;margin:0;color:rgba(255,255,255,.78);font-size:13px}
+    .synthesis{background:var(--paper)}
+    .synthesisGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px}.feedbackMap{border:1px solid var(--ink);min-height:560px;padding:36px;position:relative;overflow:hidden}.feedbackMap h3{font-size:32px;line-height:1;margin:0 0 8px}.feedbackMap>p{margin:0;color:var(--muted);max-width:520px}.loop{margin:44px auto 0;max-width:590px;display:grid;grid-template-columns:1fr 1fr;gap:82px 110px;position:relative}.loop:before{content:"";position:absolute;inset:35px 65px;border:3px dashed var(--cobalt);border-radius:50%}.loopNode{position:relative;z-index:2;background:var(--ivory);border:1px solid var(--ink);min-height:126px;padding:18px}.loopNode:nth-child(2),.loopNode:nth-child(3){background:var(--green-soft)}.loopNode b{display:block;font-size:20px;margin-bottom:6px}.loopNode span{font-size:12px;color:var(--muted)}
+    .implications{display:flex;flex-direction:column;border-top:1px solid var(--ink)}.implication{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:19px 0;border-bottom:1px solid var(--ink)}.implication .i{font-size:11px;font-weight:900;color:var(--cobalt)}.implication b{display:block;font-size:21px;line-height:1.15}.implication p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .attendanceBand{margin-top:58px;border-top:1px solid var(--ink);padding-top:26px;display:grid;grid-template-columns:210px 1fr;gap:36px}.attendanceBand h3{font-size:26px;line-height:1;margin:0}.funnel{display:grid;grid-template-columns:repeat(4,1fr);gap:0;align-items:end}.funnelStep{padding:18px;border-left:1px solid var(--ink);min-height:122px}.funnelStep b{font-size:40px;line-height:1;color:var(--cobalt)}.funnelStep span{display:block;font-size:12px;margin-top:8px}.attendanceLimits{grid-column:2;font-size:11px;color:var(--muted);margin:0}
+    .diagnostic{background:var(--green)}
+    .diagnosticGrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}.scoreCard{background:var(--ink);color:#fff;padding:36px;position:sticky;top:92px;height:max-content}.scoreCard b{font-size:100px;line-height:.85;letter-spacing:-.08em}.scoreCard span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-top:18px}.scoreCard p{font-size:18px;margin:22px 0 0;color:#cfd4cf}.checks{border-top:1px solid var(--ink)}.check{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--ink);cursor:pointer}.check input{position:absolute;opacity:0}.box{width:38px;height:38px;border:2px solid var(--ink);display:grid;place-items:center;font-weight:900}.check input:checked+.box{background:var(--cobalt);color:#fff}.check input:checked+.box:after{content:"✓"}.check h3{font-size:22px;margin:0 0 6px}.check p{margin:0;font-size:14px}.questions{background:var(--ink);color:#fff}.questionList{counter-reset:q;border-top:1px solid rgba(255,255,255,.45)}.questionItem{counter-increment:q;display:grid;grid-template-columns:80px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.45);font-size:clamp(23px,3vw,40px);line-height:1.08;letter-spacing:-.035em}.questionItem:before{content:"0" counter(q);color:var(--green);font-size:13px;font-weight:900;letter-spacing:.1em;padding-top:7px}
+    footer{background:var(--ink);color:#fff;padding:36px 0 48px}.footerGrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid rgba(255,255,255,.35);padding-top:22px}.footerGrid p{margin:0;color:rgba(255,255,255,.65);font-size:12px;max-width:600px}.footerGrid p:last-child{text-align:right}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}.reveal.in{opacity:1;transform:none}
+    @media(max-width:1000px){
+      .hero{grid-template-columns:1fr}.heroCopy{min-height:620px}.heroMap{min-height:560px}.nav{display:none}
+      .sectionIntro{grid-template-columns:110px 1fr}.systemStage{grid-template-columns:220px 1fr}.systemPanel{grid-template-columns:1fr}.machine{height:320px}
+      .caseStory{grid-template-columns:90px 1fr}.caseVisual{grid-column:2;position:relative;top:auto}.caseIndex{font-size:64px}.synthesisGrid,.diagnosticGrid{grid-template-columns:1fr}.scoreCard{position:relative;top:auto}.attendanceBand{grid-template-columns:1fr}.attendanceLimits{grid-column:1}
+    }
+    @media(max-width:680px){
+      .wrap{width:min(100% - 24px,var(--max))}.topin{height:58px}.status{font-size:9px}.brand{font-size:14px}.brandMark{width:32px;height:32px}
+      .hero{min-height:auto}.heroCopy{padding:30px 20px;min-height:560px}.heroMeta{gap:5px}.pill{font-size:9px;padding:6px 8px}h1{font-size:50px;line-height:.91;margin:28px 0 22px}.heroLead{font-size:20px}.heroBottom{align-items:start;flex-direction:column}.heroMap{min-height:470px;padding:26px 14px}.mapCaption{left:18px;top:17px}.mapLegend{right:18px;bottom:16px}.mapFloor{margin-top:18px}
+      .thesisGrid{grid-template-columns:1fr}.thesisNo,.thesisYes{padding:48px 22px}.thesisNo{border-right:0;border-bottom:1px solid rgba(255,255,255,.32)}.thesis h2{font-size:44px}
+      .sectionPad{padding:64px 0}.sectionIntro{display:block;margin-bottom:36px}.sectionNum{margin-bottom:14px}.sectionIntro h2{font-size:48px}.sectionIntro .dek{font-size:16px}
+      .systemStage{display:block}.systemTabs{display:grid;grid-template-columns:1fr 1fr;border-right:0;border-bottom:1px solid var(--ink)}.systemTab{min-height:76px;border-right:1px solid var(--ink);padding:12px;grid-template-columns:28px 1fr}.systemTab:nth-child(2n){border-right:0}.systemTab:nth-child(3){border-bottom:0}.systemTab b{font-size:14px}.systemPanel{padding:28px 20px;gap:24px}.systemPanel h3{font-size:38px}.machine{height:300px}
+      .caseStory{display:block;padding:44px 0}.caseIndex{font-size:56px;margin-bottom:20px}.caseCopy h3{font-size:42px}.caseCopy>p{font-size:16px}.caseCopy .insight{font-size:20px}.chainRow{grid-template-columns:88px 1fr}.caseVisual{margin-top:28px;min-height:390px}.visualBody{height:350px;padding:14px}
+      .tension{grid-template-columns:1fr;gap:14px}.tension strong:last-child{text-align:left}.tension p{grid-column:1}.axis{order:3}.tension strong:last-child{order:4}
+      .feedbackMap{padding:24px 16px;min-height:650px}.loop{gap:98px 20px}.loop:before{inset:44px 28px}.loopNode{min-height:120px;padding:14px}.loopNode b{font-size:17px}.attendanceBand{margin-top:42px}.funnel{grid-template-columns:1fr 1fr}.funnelStep{border-top:1px solid var(--ink)}
+      .diagnosticGrid{gap:28px}.scoreCard b{font-size:82px}.check{grid-template-columns:46px 1fr}.check h3{font-size:19px}.questionItem{grid-template-columns:48px 1fr;font-size:25px}.footerGrid{grid-template-columns:1fr}.footerGrid p:last-child{text-align:left}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
   </style>
 </head>
 <body>
-  <header class="top"><div class="wrap topin">
-    <a class="brand" href="#top"><span class="mark">E</span><span>ECR Knowledge</span></a>
-    <nav class="nav" aria-label="Навигация по странице"><a href="#brief">Бриф</a><a href="#system">Система</a><a href="#cases">4 кейса</a><a href="#audience">Аудитория</a><a href="#diagnostic">Диагностика</a></nav>
-    <span class="review"><span class="dot"></span>External review · noindex</span>
-  </div></header>
-  <main id="top">
-    <article class="hero"><div class="wrap heroGrid">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="top">
+    <div class="wrap topin">
+      <a class="brand" href="#main" aria-label="ECR Knowledge — к началу"><span class="brandMark">E</span>ECR Knowledge</a>
+      <nav class="nav" aria-label="Навигация по обзору"><a href="#answer">Ответ</a><a href="#system">Система</a><a href="#cases">4 кейса</a><a href="#synthesis">Синтез</a><a href="#diagnostic">Диагностика</a></nav>
+      <div class="status">External review · noindex</div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
       <div class="heroCopy">
-        <div class="chips"><span class="chip blue">19 августа 2026</span><span class="chip">Shopper · CatMan · RGM</span><span class="chip">рабочая встреча ECR</span></div>
-        <h1>Идеальный магазин <span>будущего</span></h1>
-        <p class="lead">От когорт до витрины: как связать задачу покупателя, роль категории, пространство магазина и измеримый пилот.</p>
-        <div class="heroActions"><a class="btn primary" href="#brief">Главное за 90 секунд</a><a class="btn" href="#cases">Разобрать четыре кейса ↓</a></div>
-      </div>
-      <aside class="heroSystem" aria-label="Редакционная схема адаптивного магазина">
-        <div class="systemTop"><b>Adaptive Store System</b><span>редакционный синтез</span></div>
-        <div class="systemCore">
-          <div class="ring"></div>
-          <div class="orbit o1"><small>SEE</small>задача покупателя</div>
-          <div class="orbit o2"><small>SHAPE</small>решение магазина</div>
-          <div class="orbit o3"><small>CONNECT</small>среда контакта</div>
-          <div class="orbit o4"><small>LEARN</small>пилот и эффект</div>
-          <div class="engine"><div><b>АДАПТАЦИЯ</b><span>НЕ ЕДИНЫЙ ШАБЛОН</span></div></div>
+        <div>
+          <div class="heroMeta"><span class="pill">19 августа 2026</span><span class="pill green">Shopper · CatMan · RGM</span><span class="pill">Рабочая встреча ECR</span></div>
+          <h1 id="page-title">Магазин, который <em>перестал быть одинаковым</em> для всех</h1>
+          <p class="heroLead"><strong>Магазин будущего — не технологический аттракцион.</strong> Это адаптивная коммерческая система: она понимает миссию покупателя, перестраивает под неё выбор и учится на измеримом результате.</p>
         </div>
-        <div class="feedback"><div><b>Вход</b>миссия и контекст</div><div><b>Движок</b>ассортимент и опыт</div><div><b>Результат</b>понятный выбор</div><div><b>Обратная связь</b>измеримый пилот</div></div>
-      </aside>
-    </div></article>
-
-    <section id="brief"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">90-second brief</div><h2>Будущее — это способность магазина меняться</h2></div><p>Четыре обезличенных кейса складываются не в витрину технологий, а в одну операционную модель.</p></div>
-      <div class="brief">
-        <div class="card thesis"><h3>Соединяющая идея встречи</h3><p><strong>Магазин будущего перестал быть одинаковым для всех.</strong> Он распознаёт задачу конкретного покупателя, перестраивает ассортимент, навигацию, пространство, коммуникацию и канал — а затем проверяет решение измеримым пилотом.</p></div>
-        <aside class="card definition"><h3>Короткая формула</h3><p>Понять задачу → собрать решение → перенести механику в нужную среду → измерить и изменить систему.</p></aside>
-      </div>
-      <div class="contrast">
-        <article class="card contrastCard bad"><span class="sign">×</span><h3>Не футуристический интерьер и не коллекция технологий</h3><p>Сенсоры, экраны и автоматизация сами по себе не делают магазин релевантнее покупателю.</p></article>
-        <article class="card contrastCard good"><span class="sign">✓</span><h3>Адаптивная система для конкретной покупательской задачи</h3><p>Ценность возникает, когда решение связано с контекстом точки, ролью категории и критерием эффекта.</p></article>
-      </div>
-      <div class="editorialCounts" aria-label="Редакционная карта встречи">
-        <div class="card count"><b>3</b><span>среды выбора</span><small>Касса, самообслуживание и digital требуют разных механик.</small></div>
-        <div class="card count"><b>4</b><span>операционных слоя</span><small>SEE, SHAPE, CONNECT и LEARN связывают кейсы в систему.</small></div>
-        <div class="card count"><b>5</b><span>шагов решения</span><small>От покупательской задачи до решения о масштабе.</small></div>
-      </div>
-    </div></section>
-
-    <section id="system" aria-labelledby="system-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Operating system</div><h2 id="system-title">SEE → SHAPE → CONNECT → LEARN</h2></div><p>Выберите слой: меняются смысл, решение и аналитическая схема.</p></div>
-      <div class="tabs" role="tablist" aria-label="Четыре слоя адаптивного магазина">
-        <button class="tab" role="tab" aria-selected="true" aria-controls="layer-panel" id="layer-see" data-layer="see"><small>01 · SEE</small><b>Увидеть задачу</b></button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="layer-panel" id="layer-shape" data-layer="shape" tabindex="-1"><small>02 · SHAPE</small><b>Собрать решение</b></button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="layer-panel" id="layer-connect" data-layer="connect" tabindex="-1"><small>03 · CONNECT</small><b>Связать среды</b></button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="layer-panel" id="layer-learn" data-layer="learn" tabindex="-1"><small>04 · LEARN</small><b>Измерить эффект</b></button>
-      </div>
-      <div class="layerPanel" id="layer-panel" role="tabpanel" aria-labelledby="layer-see">
-        <div class="layerCopy">
-          <div class="eyebrow" id="layer-kicker">Слой 01 · SEE</div>
-          <h3 id="layer-title">Начать не с магазина, а с покупательской задачи</h3>
-          <p id="layer-copy">Один сетевой стандарт встречает разные миссии, форматы и территории. Сначала нужно понять контекст выбора — только затем проектировать витрину.</p>
-          <div class="decisionBox"><b>Решение</b><span id="layer-decision">Сформулировать одну наблюдаемую задачу и выбрать сегмент, для которого она критична.</span></div>
-        </div>
-        <div class="layerVisual"><div class="layerDiagram">
-          <div class="diagramTitle"><b id="diagram-title">Контекст покупателя</b><span>оригинальная схема</span></div>
-          <div class="diagramStage" id="diagram-stage"><div class="missionGrid"><span>миссия</span><span>формат</span><span>территория</span><span>сегмент</span></div></div>
-          <div class="diagramNote" id="diagram-note">Проверка: изменение контекста должно менять конкретное решение магазина.</div>
-        </div></div>
-      </div>
-    </div></section>
-
-    <section id="cases" aria-labelledby="cases-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Four cases · one system</div><h2 id="cases-title">Наблюдение → решение → как проверить</h2></div><p>Защищённые источники заменены оригинальными диаграммами, но аналитическая логика сохранена.</p></div>
-      <div class="caseGrid">
-        <article class="card case">
-          <figure class="caseVisual"><div class="vizCard"><div class="vizLabel">SEE · контекст покупателя</div><div class="vizTitle">Одинаковая сеть — разные задачи</div><div class="lens"><div>миссия покупки</div><div>формат точки</div><div>территория</div><div>сегмент</div></div></div></figure>
-          <div class="caseBody"><div class="caseMeta"><span>Кейс 1</span><span>Сложная категория</span></div><h3>Больше полки не означает проще выбор</h3><p class="caseIntro">Когда различия между вариантами трудно считать, расширение ассортимента может увеличить когнитивную нагрузку вместо ценности.</p><div class="chain"><div class="chainBlock"><b>Наблюдение → смысл</b><p>Покупателю нужна не ширина выбора сама по себе, а понятные основания сравнения и сценарий решения.</p></div><div class="arrow">→</div><div class="chainBlock"><b>Решение магазина</b><p>Связать адресную матрицу и навигацию с контекстом конкретной точки.</p></div></div><div class="test"><b>Как проверить</b>Стал ли покупатель быстрее различать варианты и увереннее завершать выбор?</div><div class="source">Редакционный синтез подтверждённого кейса; без воспроизведения исходного материала.</div></div>
-        </article>
-        <article class="card case">
-          <figure class="caseVisual"><div class="vizCard"><div class="vizLabel">CONNECT · три среды</div><div class="vizTitle">Одна механика не живёт во всех каналах</div><div class="threeWays"><div>касса<small>время ожидания</small></div><div>самообслуживание<small>скорость и фокус</small></div><div>digital<small>ограниченное внимание</small></div></div></div></figure>
-          <div class="caseBody"><div class="caseMeta"><span>Кейс 2</span><span>Импульсный выбор</span></div><h3>Механику контакта нужно переносить, а не копировать выкладку</h3><p class="caseIntro">Классическая касса, самообслуживание и e-commerce дают разное время, пространство и внимание.</p><div class="chain"><div class="chainBlock"><b>Наблюдение → смысл</b><p>Одна и та же мини-выкладка становится невидимой или мешает основному сценарию в другой среде.</p></div><div class="arrow">→</div><div class="chainBlock"><b>Решение магазина</b><p>Найти естественный момент выбора и отдельную механику контакта для каждого канала.</p></div></div><div class="test"><b>Как проверить</b>Контакт заметен и релевантен, но не добавляет трения в основной путь?</div><div class="source">Редакционный синтез подтверждённого кейса; без брендов, цитат и слайдов.</div></div>
-        </article>
-        <article class="card case">
-          <figure class="caseVisual"><div class="vizCard"><div class="vizLabel">LEARN · операционная модель</div><div class="vizTitle">Сегмент должен изменить управление</div><div class="ownerFlow"><div>владелец</div><div>инициатива</div><div>критерий эффекта</div><div>пилот</div></div></div></figure>
-          <div class="caseBody"><div class="caseMeta"><span>Кейс 3</span><span>Shopper management</span></div><h3>Сегментация ценна только тогда, когда меняет решение</h3><p class="caseIntro">Описание аудитории остаётся исследованием, пока у сегмента нет владельца, инициативы и измеримого критерия.</p><div class="chain"><div class="chainBlock"><b>Наблюдение → смысл</b><p>Один и тот же товар играет разную роль для разных покупательских задач и корзин.</p></div><div class="arrow">→</div><div class="chainBlock"><b>Решение магазина</b><p>Привязать сегмент к конкретной инициативе, ответственному и воротам пилота.</p></div></div><div class="test"><b>Как проверить</b>Привела ли сегментация к наблюдаемому изменению ассортимента, сервиса или коммуникации?</div><div class="source">Редакционный синтез подтверждённого кейса; именная атрибуция исключена.</div></div>
-        </article>
-        <article class="card case">
-          <figure class="caseVisual"><div class="vizCard"><div class="vizLabel">SHAPE · локальная настройка</div><div class="vizTitle">Единое обещание — адресный action plan</div><div class="choicePath"><span>общий принцип</span><i>→</i><span>контекст точки</span><i>→</i><span>портфель решений</span></div></div></figure>
-          <div class="caseBody"><div class="caseMeta"><span>Кейс 4</span><span>Локальная ценность</span></div><h3>Федеральный стандарт и локальная матрица должны работать вместе</h3><p class="caseIntro">Сеть сохраняет единое обещание, но покупательская задача и роль категории различаются по территории и формату.</p><div class="chain"><div class="chainBlock"><b>Наблюдение → смысл</b><p>Усреднённое решение не объясняет, где и почему конкретная инициатива создаёт ценность.</p></div><div class="arrow">→</div><div class="chainBlock"><b>Решение магазина</b><p>Разделить общий принцип сети и адресный план действий для выбранного кластера.</p></div></div><div class="test"><b>Как проверить</b>Есть ли заранее выбранная группа точек, критерий успеха и решение о следующем масштабе?</div><div class="source">Редакционный синтез подтверждённого кейса; без идентифицирующих деталей.</div></div>
-        </article>
-      </div>
-    </div></section>
-
-    <section id="audience" aria-labelledby="audience-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Aggregate audience evidence</div><h2 id="audience-title">Регистрация и участие — разные сигналы</h2></div><p>Показаны только обезличенные агрегаты. Регистрационные записи не выдаются за фактическую посещаемость.</p></div>
-      <div class="attendance">
-        <div class="card attendanceMain"><b>48</b><h3>уникальных участников содержательной онлайн-части</h3><p>Главный проверенный показатель фактического участия. Имена, компании и список посещения не публикуются.</p></div>
-        <div class="card bars">
-          <div class="barrow"><span>Регистрационные записи</span><div class="track"><div class="fill" style="width:100%"></div></div><b>176</b></div>
-          <div class="barrow"><span>Онлайн-регистрация</span><div class="track"><div class="fill" style="width:50%"></div></div><b>88</b></div>
-          <div class="barrow"><span>Уникальное участие</span><div class="track"><div class="fill green" style="width:27.3%"></div></div><b>48</b></div>
-          <div class="barrow"><span>Не менее 60 минут</span><div class="track"><div class="fill green" style="width:21.6%"></div></div><b>38</b></div>
-          <div class="limits">Источники: обезличенные агрегаты регистрационного и онлайн-отчётов. Офлайн check-in отсутствует и не моделируется; столбцы отражают разные основания подсчёта.</div>
-          <div class="noBaseline">Сопоставимого исторического baseline в канонических данных нет — сравнение с предыдущими встречами не показывается.</div>
+        <div class="heroBottom">
+          <p>Редакционный синтез четырёх реальных кейсов встречи. Компании и исходные материалы обезличены в соответствии с режимом внешнего просмотра.</p>
+          <a class="down" href="#answer">Главное за 90 секунд <span>↓</span></a>
         </div>
       </div>
-    </div></section>
-
-    <section aria-labelledby="synthesis-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Cross-case synthesis</div><h2 id="synthesis-title">Магазин будущего — это цикл, а не конечная картинка</h2></div><p>Система видит изменение покупательской задачи, адаптирует решение и учится на измеримом результате.</p></div>
-      <div class="synthesis">
-        <div class="card listCard dark"><h3>Вход → адаптивный движок → опыт → обратная связь</h3><ul><li><b>Вход:</b> миссия, сегмент, территория и формат.</li><li><b>Движок:</b> ассортимент, навигация, пространство, коммуникация и канал.</li><li><b>Опыт:</b> понятный выбор без лишнего трения.</li><li><b>Feedback:</b> метрика пилота и решение по масштабу.</li></ul></div>
-        <div class="card listCard"><h3>Три напряжения, которые нельзя «задизайнить»</h3><ul><li>Сетевой стандарт ↔ адресная матрица конкретной точки.</li><li>Скорость покупки ↔ возможность заметить и открыть новое.</li><li>Красивый аналитический вывод ↔ операционное исполнение с владельцем.</li></ul></div>
+      <div class="heroMap" aria-label="Карта адаптивного магазина">
+        <div class="mapCaption">Adaptive store / decision map</div>
+        <div class="mapFloor">
+          <svg viewBox="0 0 520 520" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Карта движения решения в адаптивном магазине</title>
+            <desc id="map-desc">Миссия покупателя проходит через ассортимент, навигацию, пространство и канал, после чего результат возвращается в систему как обратная связь.</desc>
+            <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#00bd78"/></marker></defs>
+            <path d="M57 83 H196 V166 H324 V84 H461 V236 H370 V382 H458" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+            <path d="M458 382 H306 V458 H163 V383 H55 V249 H129" fill="none" stroke="#00bd78" stroke-width="4" marker-end="url(#arrow)"/>
+            <g fill="#fff" stroke="#11130f" stroke-width="1"><rect x="22" y="48" width="142" height="72"/><rect x="178" y="131" width="146" height="72"/><rect x="325" y="48" width="169" height="72"/><rect x="370" y="201" width="124" height="72"/><rect x="306" y="347" width="188" height="72"/><rect x="129" y="423" width="177" height="72"/><rect x="21" y="347" width="142" height="72"/><rect x="20" y="213" width="109" height="72"/></g>
+            <g fill="#11130f" font-family="Arial" font-weight="800" font-size="13"><text x="38" y="76">МИССИЯ</text><text x="38" y="96" font-size="10" font-weight="500">зачем пришёл</text><text x="194" y="160">АССОРТИМЕНТ</text><text x="194" y="180" font-size="10" font-weight="500">что предложить</text><text x="342" y="76">НАВИГАЦИЯ</text><text x="342" y="96" font-size="10" font-weight="500">как сделать понятным</text><text x="386" y="230">КАНАЛ</text><text x="386" y="250" font-size="10" font-weight="500">где встретить</text><text x="324" y="376">ОПЫТ</text><text x="324" y="396" font-size="10" font-weight="500">что получилось</text><text x="146" y="452">ИЗМЕРЕНИЕ</text><text x="146" y="472" font-size="10" font-weight="500">какой эффект</text><text x="37" y="376">ПИЛОТ</text><text x="37" y="396" font-size="10" font-weight="500">как проверить</text><text x="34" y="242">КОНТЕКСТ</text><text x="34" y="262" font-size="10" font-weight="500">где и для кого</text></g>
+            <circle cx="260" cy="270" r="66" fill="#00bd78" stroke="#11130f" stroke-width="2"/><text x="260" y="258" fill="#11130f" text-anchor="middle" font-family="Arial" font-weight="900" font-size="18">НЕ ЕДИНЫЙ</text><text x="260" y="282" fill="#11130f" text-anchor="middle" font-family="Arial" font-weight="900" font-size="18">ШАБЛОН</text>
+          </svg>
+        </div>
+        <div class="mapLegend">Оригинальная редакционная схема ECR: решение движется по контуру и возвращается в магазин обратной связью.</div>
       </div>
-      <div class="path" aria-label="Путь управленческого решения"><div class="step">1 · задача покупателя</div><div class="step">2 · гипотеза решения</div><div class="step">3 · пилот</div><div class="step">4 · измерение</div><div class="step">5 · масштабирование</div></div>
-    </div></section>
+    </section>
 
-    <section id="diagnostic" aria-labelledby="diagnostic-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Практическая диагностика</div><h2 id="diagnostic-title">Насколько ваш магазин уже из будущего?</h2></div><p>Пять вопросов для команды до того, как запускать очередную технологию или редизайн.</p></div>
-      <div class="diagnostic">
-        <article class="card question"><span class="num">01</span><h3>Какую конкретную покупательскую задачу мы решаем?</h3><p>Не «для всех клиентов», а для выбранной миссии и контекста.</p></article>
-        <article class="card question"><span class="num">02</span><h3>Что действительно должно адаптироваться?</h3><p>Матрица, навигация, пространство, коммуникация или канал?</p></article>
-        <article class="card question"><span class="num">03</span><h3>Как решение меняется между средами?</h3><p>Касса, самообслуживание и digital не равны друг другу.</p></article>
-        <article class="card question"><span class="num">04</span><h3>Кто владеет пилотом и эффектом?</h3><p>Без владельца сегмента наблюдение не становится системой.</p></article>
-        <article class="card question"><span class="num">05</span><h3>Какое правило определяет следующий шаг?</h3><p>Масштабировать, изменить или остановить — по заранее выбранному критерию.</p></article>
+    <section class="thesis" id="answer" aria-labelledby="answer-title">
+      <div class="thesisGrid">
+        <div class="thesisNo reveal"><div class="kicker">Это не</div><h2>Робот у полки.<br>Экран ради экрана.<br>Одинаковый «идеал».</h2></div>
+        <div class="thesisYes reveal"><div class="kicker">Это на самом деле</div><h2 id="answer-title">Способность магазина меняться под задачу покупателя.</h2><p>Будущее начинается не с технологии, а с точного ответа: <strong>кто пришёл, зачем, в каком контексте и что должно стать для него проще.</strong></p></div>
       </div>
-    </div></section>
+    </section>
 
-    <section aria-labelledby="open-title"><div class="wrap">
-      <div class="sectionHead"><div><div class="eyebrow">Что унесли с собой</div><h2 id="open-title">Открытые вопросы рынка</h2></div><p>Повестка для следующих пилотов — без закрытой атрибуции и неподтверждённых цифр.</p></div>
-      <div class="openGrid">
-        <article class="card openQ"><b>01</b><p>Как считать совокупный финансовый эффект работы с покупательскими сегментами?</p></article>
-        <article class="card openQ"><b>02</b><p>Как совместить единое обещание сети с адресной ассортиментной матрицей?</p></article>
-        <article class="card openQ"><b>03</b><p>Как перенести импульсный выбор в digital без перегрузки интерфейса?</p></article>
-        <article class="card openQ"><b>04</b><p>Кто финансирует перепроектирование и на каком горизонте оценивается пилот?</p></article>
-        <article class="card openQ"><b>05</b><p>Какие данные и правила нужны для совместного управления покупательской задачей?</p></article>
+    <section class="system sectionPad" id="system" aria-labelledby="system-title">
+      <div class="wrap">
+        <div class="sectionIntro reveal"><div class="sectionNum">01 / Система</div><div><h2 id="system-title">Четыре действия вместо одной витрины</h2><p class="dek">SEE → SHAPE → CONNECT → LEARN — не последовательность слайдов, а замкнутый управленческий цикл. Нажмите на слой, чтобы увидеть, какой вопрос он решает.</p></div></div>
+        <div class="systemStage reveal">
+          <div class="systemTabs" role="tablist" aria-label="Слои адаптивного магазина">
+            <button class="systemTab" id="tab-see" role="tab" aria-controls="system-panel" aria-selected="true" data-layer="see"><span class="n">01</span><b>SEE<br>увидеть задачу</b></button>
+            <button class="systemTab" id="tab-shape" role="tab" aria-controls="system-panel" aria-selected="false" tabindex="-1" data-layer="shape"><span class="n">02</span><b>SHAPE<br>собрать решение</b></button>
+            <button class="systemTab" id="tab-connect" role="tab" aria-controls="system-panel" aria-selected="false" tabindex="-1" data-layer="connect"><span class="n">03</span><b>CONNECT<br>связать среды</b></button>
+            <button class="systemTab" id="tab-learn" role="tab" aria-controls="system-panel" aria-selected="false" tabindex="-1" data-layer="learn"><span class="n">04</span><b>LEARN<br>научиться</b></button>
+          </div>
+          <div class="systemPanel" id="system-panel" role="tabpanel" aria-labelledby="tab-see">
+            <div><div class="kicker" id="layer-kicker">SEE / Никакого среднего покупателя</div><h3 id="layer-title">Начать с миссии, а не с метража</h3><p id="layer-copy">Одна категория выполняет разные задачи в разных поездках и для разных сегментов. Усреднённая полка скрывает эти различия; адаптивный магазин делает их исходной точкой решения.</p><div class="question" id="layer-question">Управленческий вопрос: какую работу покупатель поручает магазину именно здесь?</div></div>
+            <div class="machine" aria-live="polite">
+              <svg viewBox="0 0 520 380" aria-hidden="true">
+                <defs><marker id="mini-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L0 6 L7 3z" fill="#154ee9"/></marker></defs>
+                <g id="machine-orbits" fill="none" stroke="#154ee9"><ellipse cx="260" cy="190" rx="208" ry="124" stroke-width="2"/><ellipse cx="260" cy="190" rx="160" ry="91" stroke-width="1" stroke-dasharray="5 6"/></g>
+                <path id="machine-path" d="M55 190 C112 52 403 54 466 187 C416 326 104 328 55 190" fill="none" stroke="#00bd78" stroke-width="7" marker-end="url(#mini-arrow)"/>
+                <g id="machine-points" fill="#fff" stroke="#11130f" stroke-width="2"><circle cx="55" cy="190" r="28"/><circle cx="260" cy="66" r="28"/><circle cx="466" cy="190" r="28"/><circle cx="260" cy="314" r="28"/></g>
+              </svg>
+              <div class="machineLabel"><b id="machine-word">МИССИЯ</b><span id="machine-sub">контекст + задача</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="rights"><b>Обезличенная редакционная версия для согласования.</b> На странице нет исходных материалов, изображений участников, названий компаний, цитат, медиазаписей, списка присутствующих или внутренних ссылок. Диаграммы — оригинальный редакционный синтез подтверждённых источников. Страница не индексируется и не является утверждённой публичной публикацией.</div>
-    </div></section>
+    </section>
+
+    <section class="cases sectionPad" id="cases" aria-labelledby="cases-title">
+      <div class="wrap">
+        <div class="sectionIntro reveal"><div class="sectionNum">02 / Кейс-система</div><div><h2 id="cases-title">Четыре наблюдения.<br>Одна модель магазина.</h2><p class="dek">Ниже — обезличенный редакционный синтез фактических кейсов встречи. Каждый разворот заканчивается решением, которое можно проверить, а не лозунгом.</p></div></div>
+
+        <article class="caseStory reveal">
+          <div class="caseIndex">01</div>
+          <div class="caseCopy"><div class="caseTag">No average shopper</div><h3>Полка должна объяснять выбор, а не только хранить SKU</h3><p>В сложной категории расширение предложения само по себе увеличивает когнитивную нагрузку. Покупателю нужны понятные основания различия: сценарий использования, свойства, ценовой уровень и логика навигации.</p><p class="insight">Главный сдвиг: из «сколько позиций поставить» — в «как помочь принять уверенное решение».</p><div class="evidenceChain"><div class="chainRow"><b>Наблюдение</b><span>Чем сложнее категория, тем выше цена непонятного выбора.</span></div><div class="chainRow"><b>Для shopper</b><span>Поиск превращается в маршрут, а не в просмотр стены похожих упаковок.</span></div><div class="chainRow"><b>Решение</b><span>Связать ассортиментную матрицу с навигацией и контекстом конкретной точки.</span></div><div class="chainRow"><b>Проверка</b><span>Сравнить понимание полки, время выбора, конверсию и структуру корзины до и после пилота.</span></div></div><div class="sourceNote">Редакционный синтез кейса о сложной категории и выборе у полки.</div></div>
+          <figure class="caseVisual"><div class="visualHeader"><span>Decision diagram 01</span><span>Полка как интерфейс</span></div><div class="visualBody"><svg viewBox="0 0 520 410" role="img" aria-label="Схема превращения длинной полки в понятную архитектуру выбора"><rect x="18" y="24" width="484" height="312" fill="#f3efe5" stroke="#11130f"/><g fill="#154ee9"><rect x="36" y="48" width="28" height="76"/><rect x="72" y="48" width="28" height="76"/><rect x="108" y="48" width="28" height="76"/><rect x="144" y="48" width="28" height="76"/><rect x="180" y="48" width="28" height="76"/><rect x="216" y="48" width="28" height="76"/><rect x="252" y="48" width="28" height="76"/><rect x="288" y="48" width="28" height="76"/><rect x="324" y="48" width="28" height="76"/><rect x="360" y="48" width="28" height="76"/><rect x="396" y="48" width="28" height="76"/><rect x="432" y="48" width="28" height="76"/></g><text x="36" y="151" font-family="Arial" font-size="12" font-weight="800">МНОГО ВЫБОРА ≠ ПОНЯТНЫЙ ВЫБОР</text><path d="M36 184 H484" stroke="#11130f" stroke-width="2"/><g><rect x="36" y="209" width="124" height="84" fill="#00bd78" stroke="#11130f"/><rect x="178" y="209" width="124" height="84" fill="#dce7ff" stroke="#11130f"/><rect x="320" y="209" width="164" height="84" fill="#fff" stroke="#11130f"/></g><g font-family="Arial" font-weight="800" font-size="12" fill="#11130f"><text x="53" y="239">МИССИЯ</text><text x="53" y="260" font-size="10" font-weight="500">зачем выбираю</text><text x="195" y="239">НАВИГАЦИЯ</text><text x="195" y="260" font-size="10" font-weight="500">как различаю</text><text x="337" y="239">МАТРИЦА ТОЧКИ</text><text x="337" y="260" font-size="10" font-weight="500">что релевантно здесь</text></g><path d="M98 315 C190 382 340 382 416 315" fill="none" stroke="#154ee9" stroke-width="5"/><circle cx="258" cy="362" r="25" fill="#00bd78"/><text x="258" y="367" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900">ВЫБОР</text></svg></div></figure>
+        </article>
+
+        <article class="caseStory reveal">
+          <div class="caseIndex">02</div>
+          <div class="caseCopy"><div class="caseTag">Impulse redesigned</div><h3>Импульс нельзя переносить между каналами копированием</h3><p>Классическая касса, самообслуживание и digital создают разные режимы внимания. В одном есть пауза и физическая видимость, в другом — скорость и ограниченное пространство, в третьем — интерфейс и алгоритмический порядок.</p><p class="insight">Одна механика выкладки распадается на три разные задачи контакта.</p><div class="evidenceChain"><div class="chainRow"><b>Наблюдение</b><span>Момент ожидания, поле зрения и возможность взять товар меняются вместе со средой.</span></div><div class="chainRow"><b>Для shopper</b><span>Релевантное напоминание должно появиться вовремя и не мешать основной миссии.</span></div><div class="chainRow"><b>Решение</b><span>Проектировать touchpoint отдельно для кассы, самообслуживания и digital.</span></div><div class="chainRow"><b>Проверка</b><span>Измерять видимость, доступность, конверсию и частоту по каждой среде, не сводя их в один показатель.</span></div></div><div class="sourceNote">Редакционный синтез кейса о прикассовой зоне и смене каналов.</div></div>
+          <figure class="caseVisual"><div class="visualHeader"><span>Decision diagram 02</span><span>Три режима внимания</span></div><div class="visualBody"><svg viewBox="0 0 520 410" role="img" aria-label="Сравнение трёх разных моментов внимания покупателя"><g font-family="Arial" fill="#11130f"><rect x="20" y="24" width="150" height="310" fill="#fff" stroke="#11130f"/><rect x="185" y="24" width="150" height="310" fill="#dce7ff" stroke="#11130f"/><rect x="350" y="24" width="150" height="310" fill="#d9f7e9" stroke="#11130f"/><text x="38" y="55" font-size="13" font-weight="900">КАССА</text><text x="203" y="55" font-size="13" font-weight="900">SELF-CHECKOUT</text><text x="368" y="55" font-size="13" font-weight="900">DIGITAL</text><g font-size="10"><text x="38" y="80">пауза</text><text x="203" y="80">скорость</text><text x="368" y="80">поток экрана</text></g></g><g fill="none" stroke="#154ee9" stroke-width="5"><path d="M48 287 C65 135 115 135 142 287"/><path d="M213 287 C231 226 281 226 307 287"/><path d="M378 287 C405 184 451 184 472 287"/></g><g fill="#00bd78"><circle cx="95" cy="142" r="16"/><circle cx="260" cy="228" r="16"/><circle cx="426" cy="184" r="16"/></g><path d="M20 357 H500" stroke="#11130f"/><text x="260" y="386" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900">РАЗНЫЕ МОМЕНТЫ → РАЗНЫЕ МЕХАНИКИ</text></svg></div></figure>
+        </article>
+
+        <article class="caseStory reveal">
+          <div class="caseIndex">03</div>
+          <div class="caseCopy"><div class="caseTag">Insight must move</div><h3>Сегментация становится ценной, когда меняет магазин</h3><p>Портреты покупателей ничего не дают, пока не появляются владельцы решений, кросс-функциональная работа и конкретные инициативы. Сегмент должен влиять на категорию, коммуникацию и опыт точки.</p><p class="insight">Сегментация — не отчёт об аудитории. Это операционная модель выбора приоритетов.</p><div class="evidenceChain"><div class="chainRow"><b>Наблюдение</b><span>Один и тот же магазин обслуживает разные миссии, но процессы часто оптимизированы под среднее.</span></div><div class="chainRow"><b>Для shopper</b><span>Релевантность возникает, когда его задача меняет предложение, а не только описание в аналитике.</span></div><div class="chainRow"><b>Решение</b><span>Назначить владельца сегмента и перевести insight в портфель инициатив по точкам и категориям.</span></div><div class="chainRow"><b>Проверка</b><span>Заранее определить KPI сегмента и корзины, а затем сравнить пилот с контролем.</span></div></div><div class="sourceNote">Редакционный синтез кейса о shopper management.</div></div>
+          <figure class="caseVisual"><div class="visualHeader"><span>Decision diagram 03</span><span>Insight → действие</span></div><div class="visualBody"><svg viewBox="0 0 520 410" role="img" aria-label="Схема перехода от сегмента к изменениям в магазине"><g fill="none" stroke="#11130f"><circle cx="110" cy="178" r="74" fill="#dce7ff"/><circle cx="260" cy="178" r="74" fill="#fff"/><circle cx="410" cy="178" r="74" fill="#d9f7e9"/></g><g font-family="Arial" text-anchor="middle" fill="#11130f"><text x="110" y="169" font-size="15" font-weight="900">СЕГМЕНТ</text><text x="110" y="192" font-size="10">миссия + контекст</text><text x="260" y="169" font-size="15" font-weight="900">ВЛАДЕЛЕЦ</text><text x="260" y="192" font-size="10">решение + KPI</text><text x="410" y="169" font-size="15" font-weight="900">ИНИЦИАТИВА</text><text x="410" y="192" font-size="10">изменение точки</text></g><path d="M184 178 H186 M334 178 H336" stroke="#154ee9" stroke-width="7"/><g font-family="Arial" font-size="11" font-weight="800"><rect x="52" y="288" width="116" height="58" fill="#154ee9"/><rect x="202" y="288" width="116" height="58" fill="#00bd78"/><rect x="352" y="288" width="116" height="58" fill="#154ee9"/><text x="110" y="314" fill="#fff" text-anchor="middle">КАТЕГОРИЯ</text><text x="110" y="331" fill="#fff" text-anchor="middle">что менять</text><text x="260" y="314" fill="#11130f" text-anchor="middle">ОПЫТ</text><text x="260" y="331" fill="#11130f" text-anchor="middle">как менять</text><text x="410" y="314" fill="#fff" text-anchor="middle">ИЗМЕРЕНИЕ</text><text x="410" y="331" fill="#fff" text-anchor="middle">зачем менять</text></g></svg></div></figure>
+        </article>
+
+        <article class="caseStory reveal">
+          <div class="caseIndex">04</div>
+          <div class="caseCopy"><div class="caseTag">Local relevance × scale</div><h3>Сеть масштабирует принципы, а не одинаковые ответы</h3><p>Федеральная логика нужна для экономики сети, но конкретная точка живёт в территории, формате и собственном профиле миссий. Будущее — в управляемой вариативности, а не в полном единообразии или хаотичной локализации.</p><p class="insight">Единым должен быть способ принимать решение; само решение может быть локальным.</p><div class="evidenceChain"><div class="chainRow"><b>Наблюдение</b><span>Одинаковый стандарт по-разному работает в разных территориях и форматах.</span></div><div class="chainRow"><b>Для shopper</b><span>Магазин становится полезнее, когда отражает реальный локальный спрос.</span></div><div class="chainRow"><b>Решение</b><span>Разделить сетевой принцип, локальные параметры и допустимый диапазон адаптации.</span></div><div class="chainRow"><b>Проверка</b><span>Пилотировать по кластерам точек и оценивать эффект вместе с операционной стоимостью вариативности.</span></div></div><div class="sourceNote">Редакционный синтез кейса о территории, формате и CVP.</div></div>
+          <figure class="caseVisual"><div class="visualHeader"><span>Decision diagram 04</span><span>Стандарт + локальный слой</span></div><div class="visualBody"><svg viewBox="0 0 520 410" role="img" aria-label="Схема сочетания сетевого принципа и локальных решений"><rect x="34" y="30" width="452" height="78" fill="#154ee9" stroke="#11130f"/><text x="260" y="64" text-anchor="middle" font-family="Arial" font-size="16" font-weight="900" fill="#fff">СЕТЕВОЙ ПРИНЦИП</text><text x="260" y="86" text-anchor="middle" font-family="Arial" font-size="10" fill="#fff">общая логика решения и измерения</text><path d="M260 108 V155 M110 155 H410" fill="none" stroke="#11130f" stroke-width="2"/><g><rect x="40" y="155" width="140" height="132" fill="#dce7ff" stroke="#11130f"/><rect x="190" y="155" width="140" height="132" fill="#d9f7e9" stroke="#11130f"/><rect x="340" y="155" width="140" height="132" fill="#fff" stroke="#11130f"/></g><g font-family="Arial" text-anchor="middle" fill="#11130f"><text x="110" y="190" font-size="14" font-weight="900">ТОЧКА A</text><text x="110" y="216" font-size="10">миссия</text><text x="110" y="235" font-size="10">формат</text><text x="110" y="254" font-size="10">территория</text><text x="260" y="190" font-size="14" font-weight="900">ТОЧКА B</text><text x="260" y="216" font-size="10">миссия</text><text x="260" y="235" font-size="10">формат</text><text x="260" y="254" font-size="10">территория</text><text x="410" y="190" font-size="14" font-weight="900">ТОЧКА C</text><text x="410" y="216" font-size="10">миссия</text><text x="410" y="235" font-size="10">формат</text><text x="410" y="254" font-size="10">территория</text></g><path d="M110 287 C132 363 388 363 410 287" fill="none" stroke="#00bd78" stroke-width="6"/><text x="260" y="366" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900">ОБЩАЯ ЭКОНОМИКА · РАЗНЫЕ РЕШЕНИЯ</text></svg></div></figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="tensions sectionPad" aria-labelledby="tensions-title">
+      <div class="wrap"><div class="sectionIntro reveal"><div class="sectionNum">03 / Напряжения</div><div><h2 id="tensions-title">Будущее магазина живёт не в крайностях</h2><p class="dek">Четыре противоречия нельзя «закрыть» одной технологией. Их нужно удерживать в решении одновременно.</p></div></div>
+        <div class="tensionGrid reveal">
+          <div class="tension"><strong>Скорость</strong><div class="axis" style="--pos:58%"></div><strong>Исследование</strong><p>Сделать путь быстрым, не уничтожив моменты открытия и импульса.</p></div>
+          <div class="tension"><strong>Персонализация</strong><div class="axis" style="--pos:46%"></div><strong>Простота операций</strong><p>Добавлять релевантность там, где сеть способна стабильно её исполнить.</p></div>
+          <div class="tension"><strong>Локальность</strong><div class="axis" style="--pos:62%"></div><strong>Экономика масштаба</strong><p>Варьировать решение, сохраняя единый стандарт измерения и управления.</p></div>
+          <div class="tension"><strong>Insight</strong><div class="axis" style="--pos:37%"></div><strong>Действие</strong><p>Не считать знание о покупателе результатом, пока оно не изменило точку.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="synthesis sectionPad" id="synthesis" aria-labelledby="synthesis-title">
+      <div class="wrap"><div class="sectionIntro reveal"><div class="sectionNum">04 / Управление</div><div><h2 id="synthesis-title">Пилот — операционная система будущего</h2><p class="dek">Идея становится инновацией только тогда, когда у неё есть владелец, измерение и заранее понятное решение: остановить, исправить или масштабировать.</p></div></div>
+        <div class="synthesisGrid">
+          <div class="feedbackMap reveal"><h3>Контур обратной связи</h3><p>Магазин не «заканчивается» после внедрения. Он возвращает фактический опыт в следующий цикл решения.</p><div class="loop"><div class="loopNode"><b>SEE</b><span>Миссия и контекст, а не среднее по сети.</span></div><div class="loopNode"><b>SHAPE</b><span>Ассортимент, навигация и пространство как одна гипотеза.</span></div><div class="loopNode"><b>LEARN</b><span>Эффект, ограничения и решение о следующем шаге.</span></div><div class="loopNode"><b>CONNECT</b><span>Своя механика контакта для каждой среды.</span></div></div></div>
+          <div class="implications reveal"><div class="implication"><div class="i">01</div><div><b>Назначить владельца покупательской задачи</b><p>Не отдавать сегмент между аналитикой, коммерцией и операциями без единого ответственного.</p></div></div><div class="implication"><div class="i">02</div><div><b>Проектировать связку, а не элемент</b><p>Ассортимент без навигации и канал без механики контакта не создают цельного опыта.</p></div></div><div class="implication"><div class="i">03</div><div><b>Развести федеральное и локальное</b><p>Стандартизировать способ решения, но оставить точке управляемый диапазон адаптации.</p></div></div><div class="implication"><div class="i">04</div><div><b>Зафиксировать ворота пилота</b><p>До запуска определить, какой результат означает stop, change или scale.</p></div></div><div class="implication"><div class="i">05</div><div><b>Измерять shopper и операцию вместе</b><p>Положительный опыт без исполнимой экономики не масштабируется — и наоборот.</p></div></div></div>
+        </div>
+        <aside class="attendanceBand reveal" aria-labelledby="attendance-title"><h3 id="attendance-title">Контекст аудитории</h3><div class="funnel" aria-label="Агрегированная воронка участия"><div class="funnelStep"><b>176</b><span>записей регистрации на встречу</span></div><div class="funnelStep"><b>88</b><span>регистраций в онлайн-контуре</span></div><div class="funnelStep"><b>48</b><span>уникальных идентичностей в содержательной части</span></div><div class="funnelStep"><b>38</b><span>оставались не менее 60 минут</span></div></div><p class="attendanceLimits">Это четыре разные базы, а не линейная маркетинговая конверсия. Очная регистрация не подтверждает фактическое присутствие; исторически сопоставимого эталона для корректного сравнения нет. Показаны только обезличенные агрегаты.</p></aside>
+      </div>
+    </section>
+
+    <section class="diagnostic sectionPad" id="diagnostic" aria-labelledby="diagnostic-title">
+      <div class="wrap"><div class="sectionIntro reveal"><div class="sectionNum">05 / Диагностика</div><div><h2 id="diagnostic-title">Насколько ваш магазин уже из будущего?</h2><p class="dek">Отметьте утверждения, на которые ваша команда может ответить «да» не на презентации, а в работающем процессе.</p></div></div>
+        <div class="diagnosticGrid">
+          <aside class="scoreCard reveal" aria-live="polite"><b id="score">0/5</b><span>признаков адаптивной системы</span><p id="score-copy">Пока это скорее набор идей, чем работающий контур. Начните с одной покупательской задачи и одного измеримого пилота.</p></aside>
+          <form class="checks reveal" id="checks">
+            <label class="check"><input type="checkbox"><span class="box" aria-hidden="true"></span><span><h3>Миссия покупателя названа конкретно</h3><p>Команда понимает, какую задачу решает изменение и для какого контекста.</p></span></label>
+            <label class="check"><input type="checkbox"><span class="box" aria-hidden="true"></span><span><h3>Полка и навигация проектируются вместе</h3><p>Матрица отвечает не только на наличие SKU, но и на понятность выбора.</p></span></label>
+            <label class="check"><input type="checkbox"><span class="box" aria-hidden="true"></span><span><h3>У каждой среды есть своя механика контакта</h3><p>Касса, самообслуживание и digital не считаются копиями одного сценария.</p></span></label>
+            <label class="check"><input type="checkbox"><span class="box" aria-hidden="true"></span><span><h3>Локальная вариативность имеет правила</h3><p>Сеть знает, что фиксировано, а что точка может менять под территорию и формат.</p></span></label>
+            <label class="check"><input type="checkbox"><span class="box" aria-hidden="true"></span><span><h3>У пилота есть владелец и ворота решения</h3><p>До запуска определены метрика, контроль и условия stop / change / scale.</p></span></label>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions sectionPad" aria-labelledby="questions-title">
+      <div class="wrap"><div class="sectionIntro reveal"><div class="sectionNum">06 / Следующий разговор</div><div><h2 id="questions-title">Пять вопросов, которые рынок ещё не закрыл</h2></div></div><div class="questionList reveal"><div class="questionItem">Как считать совокупный финансовый эффект работы с сегментами?</div><div class="questionItem">Кто владеет экономикой перепроектирования момента выбора?</div><div class="questionItem">Где заканчивается сетевой стандарт и начинается локальная матрица?</div><div class="questionItem">Как создать импульс в digital, не перегрузив интерфейс?</div><div class="questionItem">Какие данные нужны партнёрам, чтобы управлять задачей покупателя вместе?</div></div></div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap footerin"><span>ECR Knowledge · Event Story</span><span>External review · unlisted · noindex</span></div></footer>
-  <div id="live-status" aria-live="polite" style="position:absolute;left:-9999px"></div>
+
+  <footer><div class="wrap footerGrid"><p><strong>Редакционная версия для согласования.</strong><br>Страница не индексируется и не включена в публичную навигацию. Внешняя проекция содержит только обезличенный синтез и оригинальные схемы.</p><p>Рабочая встреча ECR · 19 августа 2026<br>Права на исходные презентации, записи и атрибуцию этой страницей не предоставляются.</p></div></footer>
+
   <script>
     (function(){
-      var data={
-        see:{k:'Слой 01 · SEE',t:'Начать не с магазина, а с покупательской задачи',c:'Один сетевой стандарт встречает разные миссии, форматы и территории. Сначала нужно понять контекст выбора — только затем проектировать витрину.',d:'Сформулировать одну наблюдаемую задачу и выбрать сегмент, для которого она критична.',dt:'Контекст покупателя',n:'Проверка: изменение контекста должно менять конкретное решение магазина.',v:'<div class="missionGrid"><span>миссия</span><span>формат</span><span>территория</span><span>сегмент</span></div>'},
-        shape:{k:'Слой 02 · SHAPE',t:'Собрать ассортимент и навигацию вокруг сценария выбора',c:'Чем сложнее категория, тем важнее объяснить различия и основания выбора, а не просто увеличить число вариантов.',d:'Связать ассортиментную матрицу, навигацию и контекст конкретной точки.',dt:'Архитектура выбора',n:'Проверка: покупатель быстрее различает варианты и увереннее завершает выбор.',v:'<div class="choiceBars"><i></i><i></i><i></i><i></i><i></i></div>'},
-        connect:{k:'Слой 03 · CONNECT',t:'Перенести механику контакта, а не копировать выкладку',c:'Касса, самообслуживание и digital дают разное время, пространство и внимание. Каждой среде нужен свой способ контакта.',d:'Найти естественный момент выбора в каждом канале и убрать лишнее трение.',dt:'Три среды выбора',n:'Проверка: контакт заметен и релевантен, но не мешает основному пути.',v:'<div class="channelGrid"><div>касса<small>время ожидания</small></div><div>самообслуживание<small>скорость</small></div><div>digital<small>фокус внимания</small></div></div>'},
-        learn:{k:'Слой 04 · LEARN',t:'Замкнуть решение в измеримый цикл обучения',c:'Сегментация становится операционной системой только вместе с владельцем, пилотом, критерием эффекта и решением по масштабу.',d:'Заранее определить ворота: масштабировать, изменить или остановить.',dt:'Пилот и обратная связь',n:'Проверка: после пилота принято конкретное управленческое решение.',v:'<div class="learnLoop">измерить →<br>изменить</div>'}
+      var layers={
+        see:{k:'SEE / Никакого среднего покупателя',t:'Начать с миссии, а не с метража',c:'Одна категория выполняет разные задачи в разных поездках и для разных сегментов. Усреднённая полка скрывает эти различия; адаптивный магазин делает их исходной точкой решения.',q:'Управленческий вопрос: какую работу покупатель поручает магазину именно здесь?',w:'МИССИЯ',s:'контекст + задача',p:'M55 190 C112 52 403 54 466 187 C416 326 104 328 55 190'},
+        shape:{k:'SHAPE / Полка как интерфейс',t:'Собрать решение вокруг сценария выбора',c:'Ассортимент, навигация, пространство и коммуникация работают как связка. Больше SKU не равно больше ценности, если покупатель не понимает логику различий.',q:'Управленческий вопрос: что должно стать понятнее, быстрее или увереннее?',w:'ВЫБОР',s:'матрица + навигация',p:'M55 190 C150 312 370 312 466 190 C370 67 150 67 55 190'},
+        connect:{k:'CONNECT / Три режима внимания',t:'Перенести задачу, а не копировать выкладку',c:'Классическая касса, самообслуживание и digital создают разные моменты контакта. Каждая среда требует своей механики видимости, доступности и напоминания.',q:'Управленческий вопрос: где именно возникает момент релевантного контакта?',w:'КОНТАКТ',s:'среда + момент',p:'M55 190 C130 118 172 262 260 190 C347 118 390 262 466 190'},
+        learn:{k:'LEARN / Пилот вместо обещания',t:'Сделать обратную связь частью магазина',c:'Решение не становится инновацией до проверки. Нужны владелец, метрика, контрольная база и заранее принятые ворота: остановить, изменить или масштабировать.',q:'Управленческий вопрос: какой результат изменит следующее решение команды?',w:'ЭФФЕКТ',s:'метрика + решение',p:'M55 190 C55 55 466 55 466 190 C466 326 55 326 55 190'}
       };
-      var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
-      function show(key,focus){
-        var d=data[key],selected=null;
-        tabs.forEach(function(b){var on=b.dataset.layer===key;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;if(on)selected=b});
-        document.getElementById('layer-panel').setAttribute('aria-labelledby',selected.id);
-        document.getElementById('layer-kicker').textContent=d.k;
-        document.getElementById('layer-title').textContent=d.t;
-        document.getElementById('layer-copy').textContent=d.c;
-        document.getElementById('layer-decision').textContent=d.d;
-        document.getElementById('diagram-title').textContent=d.dt;
-        document.getElementById('diagram-note').textContent=d.n;
-        document.getElementById('diagram-stage').innerHTML=d.v;
-        document.getElementById('live-status').textContent='Показан '+d.k;
-        if(focus)selected.focus();
-      }
-      tabs.forEach(function(tab,i){
-        tab.addEventListener('click',function(){show(tab.dataset.layer,false)});
-        tab.addEventListener('keydown',function(e){var n=i;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();show(tabs[n].dataset.layer,true)});
-      });
-      show('see',false);
+      var tabs=[].slice.call(document.querySelectorAll('.systemTab'));
+      function select(i){var b=tabs[i],d=layers[b.dataset.layer];tabs.forEach(function(x,j){x.setAttribute('aria-selected',j===i?'true':'false');x.tabIndex=j===i?0:-1});document.getElementById('system-panel').setAttribute('aria-labelledby',b.id);document.getElementById('layer-kicker').textContent=d.k;document.getElementById('layer-title').textContent=d.t;document.getElementById('layer-copy').textContent=d.c;document.getElementById('layer-question').textContent=d.q;document.getElementById('machine-word').textContent=d.w;document.getElementById('machine-sub').textContent=d.s;document.getElementById('machine-path').setAttribute('d',d.p)}
+      tabs.forEach(function(b,i){b.addEventListener('click',function(){select(i)});b.addEventListener('keydown',function(e){var n=i;if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=(i-1+tabs.length)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();select(n);tabs[n].focus()})});
+      var checks=[].slice.call(document.querySelectorAll('#checks input'));var score=document.getElementById('score'),copy=document.getElementById('score-copy');var messages=['Пока это скорее набор идей, чем работающий контур. Начните с одной покупательской задачи и одного измеримого пилота.','Первый элемент есть. Теперь свяжите его с конкретным решением в точке.','Контур складывается, но решения пока остаются частями, а не системой.','Основа адаптивного магазина уже есть. Проверьте, кто владеет связями между функциями.','Система почти замкнута. Найдите одно слабое место обратной связи.','Магазин работает как адаптивная система: понимает, меняет, измеряет и учится.'];function updateScore(){var n=checks.filter(function(x){return x.checked}).length;score.textContent=n+'/5';copy.textContent=messages[n]}checks.forEach(function(x){x.addEventListener('change',updateScore)});
+      if('IntersectionObserver'in window){var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(x){io.observe(x)})}else{document.querySelectorAll('.reveal').forEach(function(x){x.classList.add('in')})}
     })();
   </script>
 </body>
